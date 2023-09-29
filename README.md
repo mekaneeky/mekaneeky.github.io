@@ -24,10 +24,11 @@ to access the ASR demo.
 Once the demo is running, you can interact with the ASR system and explore its functionalities.
 
 ## To-Do List
- [ ] Add the title of the audio to the User Interface (UI).
- [ ] Display the audio length on the UI.
- [ ] Implement functionality to pause and play the audio.
- [ ] Allow Editing transcripts and saving them for each wrong transcript
+ - [ ] Add the title of the audio to the User Interface (UI).
+ - [ ] Display the audio length on the UI.
+ - [ ] Implement functionality to pause and play the audio.
+ - [ ] Allow Editing transcripts and saving them for each wrong transcript
+ - [ ] Host it live
 
 ## Contributing
 If you would like to contribute to the improvement of this demo, feel free to submit a pull request.
