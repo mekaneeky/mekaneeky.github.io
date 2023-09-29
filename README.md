@@ -8,15 +8,16 @@ Start the HTTP Server:
 
 Open a terminal window in the repository's directory.
 Run the following command to start the HTTP server:
-``bash
+```bash
   python -m http.server
-``
+```
 #### Access the Demo:
 
 Open your web browser.
 
 Navigate to 
-``http://localhost:8000`` 
+```http://localhost:8000``` 
+
 to access the ASR demo.
 
 ## Usage
