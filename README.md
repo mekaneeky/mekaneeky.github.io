@@ -28,6 +28,7 @@ Once the demo is running, you can interact with the ASR system and explore its f
  - [ ] Display the audio length on the UI.
  - [ ] Implement functionality to pause and play the audio.
  - [ ] Allow Editing transcripts and saving them for each wrong transcript
+ - [ ] Surely python inbuilt server isnt the best way to do this 
  - [ ] Host it live
 
 ## Contributing
