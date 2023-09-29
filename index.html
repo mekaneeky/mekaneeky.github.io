@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio with Subtitles</title>
+    <style>
+        #waveform {
+            height: 100px;
+        }
+
+        #subtitle {
+            font-size: 50px;
+            margin-top: 40px;
+            margin-left: 20%;
+        }
+
+        .current {
+            text-decoration: underline;
+            background-color: black;
+            color: aquamarine
+        }
+    </style>
+</head>
+
+<body>
+    <div id="waveform"></div>
+    <div id="subtitle"></div>
+    <button id="playButton">Play</button>
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async function () {
+            // Fetch subtitles from the external JSON file
+            const response = await fetch('correct_format.json');
+            const subtitles = await response.json();
+
+            // Create a WaveSurfer instance
+            const waveform = WaveSurfer.create({
+                container: '#waveform',
+                waveColor: 'violet',
+                progressColor: 'purple'
+            });
+
+            // Load the audio file when the play button is clicked
+            document.getElementById('playButton').addEventListener('click', function () {
+                waveform.playPause();
+            });
+
+            waveform.load('poll9.wav'); // Load audio file 
+
+            // On audio process, find the corresponding subtitle and display it
+            waveform.on('audioprocess', function (time) {
+                const currentIndex = subtitles.findIndex(subtitle => time >= subtitle.timestamp[0] && time <= subtitle.timestamp[1]);
+                if (currentIndex !== -1) {
+                    let displayText = "";
+                    // Get a chunk of subtitles (5 words or less)
+                    for (let i = Math.max(0, currentIndex - 2); i <= Math.min(subtitles.length - 1, currentIndex + 2); i++) {
+                        displayText += i === currentIndex ? `<span class='current'>${subtitles[i].text}</span> ` : subtitles[i].text + ' ';
+                    }
+                    document.getElementById('subtitle').innerHTML = displayText;
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
