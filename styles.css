@@ -1,0 +1,53 @@
+#waveform {
+    height: 100px;
+}
+
+#subtitle {
+    font-size: 50px;
+    margin-top: 40px;
+    margin-left: 20%;
+}
+
+#audioTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#audioDuration {
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.current {
+    text-decoration: underline;
+    background-color: black;
+    color: aquamarine
+}
+
+
+#subtitleEditor {
+    display: none;
+    margin-top: 20px;
+}
+
+#editableSubtitle {
+    border: 1px solid #ccc;
+    padding: 10px;
+    min-height: 50px;
+    width: 80%;
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#saveButton {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
