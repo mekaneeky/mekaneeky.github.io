@@ -1,104 +1,99 @@
+from flask import Flask, render_template, request, redirect, url_for, jsonify, send_from_directory
+import os
+import json
 import torch
-import numpy as np
-import pyaudio
 from transformers import pipeline
-from torch import Tensor
-import gc
-import multiprocessing
-from collections import deque
-from flask import Flask, render_template, jsonify
+from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
-transcription_queue = multiprocessing.Queue()
 
-SAMPLE_RATE = 16000
-CHUNK = 12000
-RECORD_SECONDS = 3000
-RATE = 16000
-WINDOW_SECONDS = 10
-WINDOW_SIZE = int(WINDOW_SECONDS * SAMPLE_RATE / CHUNK)
-MIN_OUTPUT_LENGTH = 5
+UPLOAD_FOLDER = 'uploads'
+JSON_FOLDER = 'json_files'
+ALLOWED_EXTENSIONS = {'wav', 'mp3'}
 
-device = torch.device("cpu")
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+app.config['JSON_FOLDER'] = JSON_FOLDER
 
-def prep_audio(waveform) -> Tensor:
-    return waveform
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+model_id="Sunbird/sunbird-mms"
+pipe = pipeline(model=model_id, device=device)
 
-def listener(q):
-    p = pyaudio.PyAudio()
-    stream = p.open(format=pyaudio.paInt16, channels=1, rate=RATE, input=True, frames_per_buffer=CHUNK)
-    print("listening")
-    for _ in range(0, int(SAMPLE_RATE / CHUNK * RECORD_SECONDS)):
-        data = stream.read(CHUNK)
-        waveform = ((np.frombuffer(data, np.int16)/32768).astype(np.float32)*3)
-        q.put(waveform)
-    print("done listening")
+def transcribe_audio(input_file,
+                     target_lang,
+                     device,
+                     chunk_length_s=10,
+                     stride_length_s=(4, 2),
+                     return_timestamps="word"):
+    """
+    Transcribes audio from the input file using sunbird asr model.
 
-def initialize_pipeline(target_lang="lug", device=device, model_id="Sunbird/sunbird-mms"):
-    pipe = pipeline(model=model_id, device=device)
-    pipe.tokenizer.set_target_lang("lug")
-    pipe.model.load_adapter("lug")
-    return pipe
+    Args:
+        input_file (str): Path to the audio file for transcription.
+        target_lang (str): Target language for transcription.
+            'ach' - Acholi
+            'lug' - Luganda
+            'teo' - Ateso
+            'lgg' - Lugbara
+        device (str or torch.device): Device for running the model (e.g., 'cpu', 'cuda').
+        chunk_length_s (int, optional): Length of audio chunks in seconds. Defaults to 5.
 
-def transcribe_stream(pipe, input_file):
-    output = pipe(input_file)
+    Returns:
+        dict: A dictionary containing the transcription result.
+            Example: {'text': 'Transcribed text here.'}
+    """
+
+    # Set the tokenizer language and load the necessary adapter
+    pipe.tokenizer.set_target_lang(target_lang)
+    pipe.model.load_adapter(target_lang)
+
+    output = pipe(input_file, chunk_length_s=chunk_length_s, stride_length_s=stride_length_s, return_timestamps="word")
     return output
 
-@app.route('/')
+
+def allowed_file(filename):
+    return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+
+@app.route('/', methods=['GET', 'POST'])
 def index():
-    return render_template("index.html")
+    if request.method == 'POST':
+        if 'file' not in request.files:
+            return redirect(request.url)
+        file = request.files['file']
+        if file.filename == '':
+            return redirect(request.url)
+        if file and allowed_file(file.filename):
+            filename = secure_filename(file.filename)
+            filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+            file.save(filepath)
+            
+            # Transcribe the audio
+            target_language = "lug"
+            transcription_result = transcribe_audio(filepath, target_language, device)
 
-@app.route('/get_transcription')
-def get_transcription():
-    messages = []
-    while not transcription_queue.empty():
-        messages.append(transcription_queue.get())
-    return jsonify(messages=messages)
+            # Save the result to JSON
+            json_file_path = os.path.join(app.config['JSON_FOLDER'], filename + '.json')
+            with open(json_file_path, 'w') as json_file:
+                json.dump(transcription_result, json_file)
+            
+            return redirect(url_for('view_transcriptions'))
 
-if __name__ == "__main__":
-    target_language = "lug"
-    device = torch.device("cpu")
-    pipe = initialize_pipeline(target_lang="lug", device=device)
+    return render_template('upload.html')
 
-    q = multiprocessing.Queue()
-    p = multiprocessing.Process(target=listener, args=(q,))
-    p.daemon = True
-    p.start()
+@app.route('/transcriptions', methods=['GET'])
+def view_transcriptions():
+    files = os.listdir(app.config['JSON_FOLDER'])
+    return render_template('transcriptions.html', files=files)
 
-    total = deque(maxlen=WINDOW_SIZE)
+@app.route('/transcriptions/<filename>', methods=['GET'])
+def transcription_detail(filename):
+    filepath = os.path.join(app.config['JSON_FOLDER'], filename)
+    with open(filepath, 'r') as f:
+        data = json.load(f)
+    return jsonify(data)
 
-    # Transcription process loop
-    def run_transcription():
-        while True:
-            while len(total) < WINDOW_SIZE:
-                if not q.empty():
-                    waveform = q.get()
-                    total.append(waveform)
-                else:
-                    break
-
-            if len(total) < WINDOW_SIZE:
-                continue
-
-            log_spec = prep_audio(np.concatenate(total, axis=0))
-            encoded_audio = transcribe_stream(pipe, log_spec)
-            new_transcript = encoded_audio["text"].split()
-
-            halfway_point = len(new_transcript) // 2
-            output_text = ' '.join(new_transcript[halfway_point:])
-            if len(output_text) >= MIN_OUTPUT_LENGTH:
-                transcription_queue.put(output_text)
-
-            for _ in range(WINDOW_SIZE // 2):
-                if len(total) > 0:
-                    total.popleft()
-
-            gc.collect()
-
-    # Start the transcription loop in a separate thread
-    from threading import Thread
-    thread = Thread(target=run_transcription)
-    thread.start()
-
-    # Run Flask app
-    app.run(debug=True, threaded=True, use_reloader=False)
+if __name__ == '__main__':
+    if not os.path.exists(UPLOAD_FOLDER):
+        os.makedirs(UPLOAD_FOLDER)
+    if not os.path.exists(JSON_FOLDER):
+        os.makedirs(JSON_FOLDER)
+    app.run(port=6677, debug=True)
