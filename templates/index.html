@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Transcription</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <h2>Live Transcription</h2>
+    <div id="transcription">
+        <!-- Transcriptions will be appended here -->
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            // Function to fetch transcriptions from the server
+            function fetchTranscriptions() {
+                $.ajax({
+                    url: '/get_transcription',
+                    type: 'GET',
+                    success: function (data) {
+                        // Append each transcription message to the div
+                        data.messages.forEach(function (message) {
+                            $('#transcription').append('<p>' + message + '</p>');
+                        });
+                    },
+                    complete: function () {
+                        // Set another timeout to fetch again
+                        setTimeout(fetchTranscriptions, 5000); // Fetch every 5 seconds
+                    }
+                });
+            }
+
+            // Initial fetch
+            fetchTranscriptions();
+        });
+    </script>
+</body>
+
+</html>
