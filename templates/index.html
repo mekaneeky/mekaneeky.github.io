@@ -6,42 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Live Transcription</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <!-- Adding Google Fonts for Roboto -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            font-size: 15px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f7f7f7;
-        }
-
-        h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        #transcription p {
-            max-width: 800px;
-            margin: 5px 0;
-            padding: 10px;
-            background-color: #fff;
-            border-radius: 5px;
-        }
-    </style>
 </head>
 
 <body>
-    <div class="container">
-        <h2>Live Transcription</h2>
-        <div id="transcription">
-            <!-- Transcriptions will be appended here -->
-        </div>
+    <h2>Live Transcription</h2>
+    <div id="transcription">
+        <!-- Transcriptions will be appended here -->
     </div>
 
     <script>
@@ -52,17 +22,10 @@
                     url: '/get_transcription',
                     type: 'GET',
                     success: function (data) {
-                        // Clear the transcription div
-                        $('#transcription').empty();
-
-                        // Show the last two transcription messages
-                        let length = data.messages.length;
-                        if (length >= 2) {
-                            $('#transcription').append('<p>' + data.messages[length - 2] + '</p>');
-                        }
-                        if (length >= 1) {
-                            $('#transcription').append('<p>' + data.messages[length - 1] + '</p>');
-                        }
+                        // Append each transcription message to the div
+                        data.messages.forEach(function (message) {
+                            $('#transcription').append('<p>' + message + '</p>');
+                        });
                     },
                     complete: function () {
                         // Set another timeout to fetch again

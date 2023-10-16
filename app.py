@@ -7,11 +7,8 @@ import gc
 import multiprocessing
 from collections import deque
 from flask import Flask, render_template, jsonify
-from flask_cors import CORS
-
 
 app = Flask(__name__)
-CORS(app)
 transcription_queue = multiprocessing.Queue()
 
 SAMPLE_RATE = 16000
