@@ -11,6 +11,7 @@ from flask_cors import CORS
 
 
 app = Flask(__name__)
+CORS(app)
 transcription_queue = multiprocessing.Queue()
 
 SAMPLE_RATE = 16000
