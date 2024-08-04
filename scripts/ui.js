@@ -54,6 +54,21 @@ function toggleSidebar() {
     toggleButton.textContent = sidebar.classList.contains('collapsed') ? '≡' : '×';
 }
 
+async function displayContent(section) {
+    const content = document.getElementById('content');
+    try {
+        const response = await fetch(section.file);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const text = await response.text();
+        content.innerHTML = `<h2>${section.name}</h2>${text}`;
+    } catch (error) {
+        console.error('Could not load the content:', error);
+        content.innerHTML = `<h2>${section.name}</h2><p>Sorry, the content could not be loaded.</p>`;
+    }
+}
+
 // Event listeners
 document.addEventListener('keydown', (e) => {
     switch(e.key) {
@@ -67,5 +82,6 @@ document.addEventListener('keydown', (e) => {
         case 'Enter': hideDialog(); break;
     }
 });
+
 
 document.getElementById('toggle-sidebar').addEventListener('click', toggleSidebar);

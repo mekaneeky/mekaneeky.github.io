@@ -2,12 +2,19 @@ const game = {
     map: [],
     dragonHealth: CONFIG.initialDragonHealth,
 
-    init() {
+    async init() {
         this.updatePositions();
         drawMap();
         updateStatusBar();
-        displayContent(SECTIONS['H']);
+        await displayContent(SECTIONS['H']);
         displayDialog("Welcome to Dr. Pixel's Research Realm! Use arrow keys to move, 'i' for inventory, and space to interact. Find keys to unlock doors and explore!", "Start Adventure", hideDialog);
+    },
+
+    async checkSection() {
+        const currentChar = CONFIG.mapLayout[player.y][player.x];
+        if (SECTIONS[currentChar]) {
+            await displayContent(SECTIONS[currentChar]);
+        }
     },
 
     updatePositions,

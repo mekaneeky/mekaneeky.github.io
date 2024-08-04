@@ -124,3 +124,23 @@ button {
 button:hover {
     background-color: #004400;
 }
+
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #00ff00;
+    border-radius: 6px;
+    border: 3px solid #000000;
+  }
+  
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #00ff00 #000000;
+  }
