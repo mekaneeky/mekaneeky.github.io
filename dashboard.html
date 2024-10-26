@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loss Function Search</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <style>
+        :root {
+            --terminal-green: #00ff00;
+            --terminal-dark: #001100;
+            --terminal-glow: #00ff0033;
+        }
+        
+        body {
+            background-color: black;
+            color: var(--terminal-green);
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 1px solid var(--terminal-green);
+            padding-bottom: 20px;
+        }
+
+        .header h1 {
+            text-shadow: 0 0 10px var(--terminal-glow);
+            animation: pulse 2s infinite;
+        }
+
+        .terminal-window {
+            background-color: var(--terminal-dark);
+            border: 1px solid var(--terminal-green);
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 0 20px var(--terminal-glow);
+        }
+
+        .section-title {
+            border-bottom: 1px solid var(--terminal-green);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid var(--terminal-green);
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--terminal-dark);
+        }
+
+        .chart-container {
+            position: relative;
+            height: 400px;
+            width: 100%;
+        }
+
+        @keyframes pulse {
+            0% { text-shadow: 0 0 10px var(--terminal-glow); }
+            50% { text-shadow: 0 0 20px var(--terminal-glow); }
+            100% { text-shadow: 0 0 10px var(--terminal-glow); }
+        }
+
+        .cursor::after {
+            content: "_";
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+
+        .status-bar {
+            margin-top: 40px;
+            font-size: 0.9em;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .loading {
+            color: #00ff00;
+            text-align: center;
+            padding: 20px;
+            animation: blink 1s infinite;
+        }
+
+        .error {
+            color: #ff0000;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Loss Function Search Dashboard <span class="cursor"></span></h1>
+            <p>Mining progress and performance metrics</p>
+        </div>
+
+        <div class="terminal-window">
+            <h2 class="section-title">State of the Art Performance</h2>
+            <table id="sota-table">
+                <thead>
+                    <tr>
+                        <th>Loss Function</th>
+                        <th>MNIST Accuracy</th>
+                        <th>CIFAR-10 Accuracy</th>
+                        <th>Training Time</th>
+                        <th>Complexity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CrossEntropy (Baseline)</td>
+                        <td>97.2%</td>
+                        <td>85.6%</td>
+                        <td>1.0x</td>
+                        <td>Low</td>
+                    </tr>
+                    <tr>
+                        <td>MSE (Baseline)</td>
+                        <td>96.8%</td>
+                        <td>83.2%</td>
+                        <td>1.1x</td>
+                        <td>Low</td>
+                    </tr>
+                    <tr>
+                        <td>Evolved Loss #1</td>
+                        <td>97.5%</td>
+                        <td>86.1%</td>
+                        <td>1.2x</td>
+                        <td>Medium</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="terminal-window">
+            <h2 class="section-title">Performance Over Time</h2>
+            <div class="chart-container">
+                <canvas id="performanceChart"></canvas>
+            </div>
+        </div>
+
+        <div class="status-bar">
+            <span>Status: Mining in progress...</span>
+            <span>Last updated: <span id="timestamp"></span></span>
+        </div>
+    </div>
+
+    <script>
+                // Terminal color palette
+                const colors = {
+            red: '#FF0000',
+            yellow: '#FFFF00',
+            magenta: '#FF00FF',
+            cyan: '#00FFFF',
+            orange: '#FFA500',
+            purple: '#800080',
+            brightRed: '#FF4444',
+            brightBlue: '#4444FF'
+        };
+
+        // Function to update the SOTA table
+        function updateSotaTable(data) {
+            const tbody = document.querySelector('#sota-table tbody');
+            tbody.innerHTML = ''; // Clear existing rows
+
+            data.sota.forEach(row => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td>${row.name}</td>
+                    <td>${row.mnist_accuracy}%</td>
+                    <td>${row.cifar10_accuracy}%</td>
+                    <td>${row.training_time}x</td>
+                    <td>${row.complexity}</td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        // Function to update the performance chart
+        function updatePerformanceChart(data) {
+            const ctx = document.getElementById('performanceChart').getContext('2d');
+            
+            // Transform the data into Chart.js format
+            const datasets = data.performance.map((series, index) => ({
+                label: series.name,
+                data: series.values,
+                borderColor: Object.values(colors)[index % Object.keys(colors).length],
+                backgroundColor: Object.values(colors)[index % Object.keys(colors).length] + '33',
+                tension: 0.4
+            }));
+
+            // Create the chart
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: Array.from({length: datasets[0].data.length}, (_, i) => `Iteration ${i}`),
+                    datasets: datasets
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            labels: {
+                                color: '#00ff00',
+                                font: {
+                                    family: 'Courier New'
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            grid: { color: '#003300' },
+                            ticks: {
+                                color: '#00ff00',
+                                font: { family: 'Courier New' }
+                            }
+                        },
+                        y: {
+                            grid: { color: '#003300' },
+                            ticks: {
+                                color: '#00ff00',
+                                font: { family: 'Courier New' }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Function to update timestamp
+        function updateTimestamp(timestamp) {
+            document.getElementById('timestamp').textContent = new Date(timestamp).toLocaleString();
+        }
+
+        // Main function to load and display data
+        async function loadDashboardData() {
+            try {
+                const response = await fetch('data/dashboard.json');
+                if (!response.ok) {
+                    throw new Error('Failed to load dashboard data');
+                }
+                const data = await response.json();
+                
+                // Update all components with the loaded data
+                updateSotaTable(data);
+                updatePerformanceChart(data);
+                updateTimestamp(data.lastUpdated);
+                
+            } catch (error) {
+                console.error('Error loading dashboard data:', error);
+                document.querySelector('.container').innerHTML += `
+                    <div class="error">Error loading dashboard data: ${error.message}</div>
+                `;
+            }
+        }
+
+        // Load data when page loads
+        loadDashboardData();
+
+        // Optionally, refresh data periodically
+        //setInterval(loadDashboardData, 60000); // Refresh every minute
+    </script>
+</body>
+</html>
