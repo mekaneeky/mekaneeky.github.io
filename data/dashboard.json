@@ -1,5 +1,5 @@
 {
-    "lastUpdated": "2024-11-06T21:07:04Z",
+    "lastUpdated": "2024-11-06T23:05:35Z",
     "sota": [
         {
             "name": "195.json",
@@ -9,71 +9,43 @@
             "complexity": "High"
         },
         {
-            "name": "147.json",
+            "name": "178.json",
             "mnist_accuracy": 89.9,
             "cifar10_accuracy": null,
             "training_time": 0.1,
             "complexity": "High"
         },
         {
-            "name": "245.json",
-            "mnist_accuracy": 89.4,
-            "cifar10_accuracy": null,
-            "training_time": 0.1,
-            "complexity": "High"
-        },
-        {
-            "name": "157.json",
-            "mnist_accuracy": 89.4,
-            "cifar10_accuracy": null,
-            "training_time": 0.1,
-            "complexity": "High"
-        },
-        {
-            "name": "199.json",
-            "mnist_accuracy": 89.1,
-            "cifar10_accuracy": null,
-            "training_time": 0.1,
-            "complexity": "High"
-        },
-        {
-            "name": "178.json",
-            "mnist_accuracy": 89.7,
-            "cifar10_accuracy": null,
-            "training_time": 0.1,
-            "complexity": "High"
-        },
-        {
             "name": "177.json",
-            "mnist_accuracy": 89.1,
+            "mnist_accuracy": 89.4,
+            "cifar10_accuracy": null,
+            "training_time": 0.1,
+            "complexity": "High"
+        },
+        {
+            "name": "115.json",
+            "mnist_accuracy": 89.4,
             "cifar10_accuracy": null,
             "training_time": 0.1,
             "complexity": "High"
         },
         {
             "name": "224.json",
-            "mnist_accuracy": 88.5,
-            "cifar10_accuracy": null,
-            "training_time": 0.1,
-            "complexity": "High"
-        },
-        {
-            "name": "208.json",
-            "mnist_accuracy": 89.2,
+            "mnist_accuracy": 89.3,
             "cifar10_accuracy": null,
             "training_time": 0.1,
             "complexity": "High"
         },
         {
             "name": "MSE (Baseline)",
-            "mnist_accuracy": 90.3,
+            "mnist_accuracy": 90.8,
             "cifar10_accuracy": null,
             "training_time": 0.1,
             "complexity": "Low"
         },
         {
             "name": "CrossEntropy (Baseline)",
-            "mnist_accuracy": 89.3,
+            "mnist_accuracy": 89.9,
             "cifar10_accuracy": null,
             "training_time": 0.1,
             "complexity": "Low"
@@ -95,7 +67,7 @@
             ]
         },
         {
-            "name": "147.json",
+            "name": "178.json",
             "values": [
                 70.03,
                 83.04,
@@ -109,7 +81,7 @@
             ]
         },
         {
-            "name": "245.json",
+            "name": "177.json",
             "values": [
                 71.26,
                 81.62,
@@ -123,7 +95,7 @@
             ]
         },
         {
-            "name": "157.json",
+            "name": "115.json",
             "values": [
                 73.19,
                 77.71,
@@ -137,101 +109,45 @@
             ]
         },
         {
-            "name": "199.json",
-            "values": [
-                74.07,
-                78.95,
-                83.88,
-                85.55,
-                85.13,
-                86.69,
-                86.65,
-                88.31,
-                89.15
-            ]
-        },
-        {
-            "name": "178.json",
-            "values": [
-                74.41,
-                75.87,
-                81.44,
-                84.68,
-                86.45,
-                86.29,
-                88.08,
-                88.75,
-                89.74
-            ]
-        },
-        {
-            "name": "177.json",
-            "values": [
-                71.99,
-                79.65,
-                81.87,
-                83.83,
-                86.47,
-                88.38,
-                87.26,
-                88.74,
-                89.12
-            ]
-        },
-        {
             "name": "224.json",
             "values": [
-                66.13,
-                83.02,
-                83.41,
-                83.46,
-                85.98,
-                88.71,
-                87.81,
-                88.91,
-                88.51
-            ]
-        },
-        {
-            "name": "208.json",
-            "values": [
-                76.7,
-                75.62,
-                84.91,
-                85.12,
-                85.5,
-                85.79,
-                85.42,
-                89.27,
-                89.24
+                74.28,
+                78.73,
+                84.23,
+                85.65,
+                86.04,
+                86.92,
+                87.27,
+                88.33,
+                89.26
             ]
         },
         {
             "name": "MSE (Baseline)",
             "values": [
-                66.24,
-                79.07,
-                83.34,
-                85.99,
-                87.0,
-                88.11,
-                89.47,
-                90.49,
-                90.28
+                67.58,
+                76.83,
+                83.18,
+                84.93,
+                87.29,
+                88.44,
+                89.85,
+                90.46,
+                90.77
             ]
         },
         {
             "name": "CrossEntropy (Baseline)",
             "values": [
-                72.14,
-                81.45,
-                84.26,
-                86.74,
-                88.21,
-                88.64,
-                89.58,
-                89.32,
-                89.3
+                71.2,
+                81.96,
+                85.45,
+                86.91,
+                88.58,
+                88.46,
+                88.67,
+                89.51,
+                89.91
             ]
         }
     ]
