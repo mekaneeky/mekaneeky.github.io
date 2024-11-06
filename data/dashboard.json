@@ -1,72 +1,72 @@
 {
-    "lastUpdated": "2024-11-05T18:13:25Z",
+    "lastUpdated": "2024-11-06T13:12:09Z",
     "sota": [
         {
-            "name": "201_pruning_sn49-01.json",
-            "mnist_accuracy": 89.8,
+            "name": "245_shropsdarcey84_recordative.json",
+            "mnist_accuracy": 89.6,
             "cifar10_accuracy": null,
             "training_time": 0.1,
             "complexity": "High"
         },
         {
-            "name": "227_pruning_sn49-01.json",
-            "mnist_accuracy": 90.2,
+            "name": "177_vinningrev201_leftwinger.json",
+            "mnist_accuracy": 89.9,
             "cifar10_accuracy": null,
             "training_time": 0.1,
             "complexity": "High"
         },
         {
-            "name": "204_pruning_sn49-01.json",
-            "mnist_accuracy": 89.5,
-            "cifar10_accuracy": null,
-            "training_time": 0.1,
-            "complexity": "High"
-        },
-        {
-            "name": "235_pruning_sn49-01.json",
+            "name": "197_shropsdarcey84_verb.json",
             "mnist_accuracy": 89.4,
-            "cifar10_accuracy": null,
-            "training_time": 0.1,
-            "complexity": "High"
-        },
-        {
-            "name": "237_pruning_sn49-01.json",
-            "mnist_accuracy": 89.3,
             "cifar10_accuracy": null,
             "training_time": 0.1,
             "complexity": "High"
         },
         {
             "name": "236_pruning_sn49-01.json",
-            "mnist_accuracy": 89.7,
-            "cifar10_accuracy": null,
-            "training_time": 0.1,
-            "complexity": "High"
-        },
-        {
-            "name": "228_pruning_sn49-01.json",
-            "mnist_accuracy": 89.5,
-            "cifar10_accuracy": null,
-            "training_time": 0.1,
-            "complexity": "High"
-        },
-        {
-            "name": "224_pruning_sn49-08.json",
-            "mnist_accuracy": 88.5,
-            "cifar10_accuracy": null,
-            "training_time": 0.1,
-            "complexity": "High"
-        },
-        {
-            "name": "202_pruning_sn49-01.json",
             "mnist_accuracy": 89.4,
             "cifar10_accuracy": null,
             "training_time": 0.1,
             "complexity": "High"
         },
         {
-            "name": "205_pruning_sn49-09.json",
-            "mnist_accuracy": 88.6,
+            "name": "224_pruning_sn49-08.json",
+            "mnist_accuracy": 89.3,
+            "cifar10_accuracy": null,
+            "training_time": 0.1,
+            "complexity": "High"
+        },
+        {
+            "name": "178_AImused_hive42.json",
+            "mnist_accuracy": 89.7,
+            "cifar10_accuracy": null,
+            "training_time": 0.1,
+            "complexity": "High"
+        },
+        {
+            "name": "147_pypert_nondispersive.json",
+            "mnist_accuracy": 89.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.1,
+            "complexity": "High"
+        },
+        {
+            "name": "208_AImused_hive41.json",
+            "mnist_accuracy": 88.4,
+            "cifar10_accuracy": null,
+            "training_time": 0.1,
+            "complexity": "High"
+        },
+        {
+            "name": "199_shropsdarcey84_taoistic.json",
+            "mnist_accuracy": 89.2,
+            "cifar10_accuracy": null,
+            "training_time": 0.1,
+            "complexity": "High"
+        },
+        {
+            "name": "157_jaydapichon68_odell.json",
+            "mnist_accuracy": 88.5,
             "cifar10_accuracy": null,
             "training_time": 0.1,
             "complexity": "High"
@@ -88,49 +88,49 @@
     ],
     "performance": [
         {
-            "name": "201_pruning_sn49-01.json",
+            "name": "245_shropsdarcey84_recordative.json",
             "values": [
-                74.42,
-                80.98,
-                82.11,
-                85.24,
-                87.14,
-                87.94,
-                88.59,
-                88.92,
-                89.76
+                74.62,
+                80.27,
+                80.66,
+                84.51,
+                87.19,
+                87.46,
+                88.1,
+                89.26,
+                89.63
             ]
         },
         {
-            "name": "227_pruning_sn49-01.json",
+            "name": "177_vinningrev201_leftwinger.json",
             "values": [
-                71.61,
-                83.55,
-                81.75,
-                85.5,
-                86.53,
-                87.01,
-                88.74,
-                88.85,
-                90.21
+                70.03,
+                83.04,
+                81.19,
+                84.11,
+                86.16,
+                86.27,
+                88.89,
+                88.66,
+                89.89
             ]
         },
         {
-            "name": "204_pruning_sn49-01.json",
+            "name": "197_shropsdarcey84_verb.json",
             "values": [
-                72.08,
-                81.88,
-                82.53,
-                85.48,
-                86.56,
-                87.68,
-                87.79,
-                89.51,
-                89.54
+                71.26,
+                81.62,
+                82.08,
+                84.73,
+                86.6,
+                87.35,
+                87.4,
+                88.78,
+                89.4
             ]
         },
         {
-            "name": "235_pruning_sn49-01.json",
+            "name": "236_pruning_sn49-01.json",
             "values": [
                 72.85,
                 78.08,
@@ -144,7 +144,7 @@
             ]
         },
         {
-            "name": "237_pruning_sn49-01.json",
+            "name": "224_pruning_sn49-08.json",
             "values": [
                 74.28,
                 78.73,
@@ -158,73 +158,73 @@
             ]
         },
         {
-            "name": "236_pruning_sn49-01.json",
+            "name": "178_AImused_hive42.json",
             "values": [
-                75.04,
-                76.68,
-                83.17,
-                85.82,
-                87.6,
-                86.25,
-                88.34,
-                88.7,
-                89.71
+                74.41,
+                75.87,
+                81.44,
+                84.68,
+                86.45,
+                86.29,
+                88.08,
+                88.75,
+                89.74
             ]
         },
         {
-            "name": "228_pruning_sn49-01.json",
+            "name": "147_pypert_nondispersive.json",
             "values": [
-                72.23,
-                80.18,
-                82.67,
-                84.76,
-                86.48,
-                87.84,
-                87.75,
-                89.06,
-                89.47
+                71.99,
+                79.65,
+                81.87,
+                83.83,
+                86.47,
+                88.38,
+                87.26,
+                88.74,
+                89.12
             ]
         },
         {
-            "name": "224_pruning_sn49-08.json",
+            "name": "208_AImused_hive41.json",
             "values": [
-                66.13,
-                83.02,
-                83.41,
-                83.46,
-                85.98,
-                88.71,
-                87.81,
+                66.35,
+                82.93,
+                83.36,
+                83.32,
+                85.43,
+                87.34,
+                87.04,
                 88.91,
-                88.51
+                88.36
             ]
         },
         {
-            "name": "202_pruning_sn49-01.json",
+            "name": "199_shropsdarcey84_taoistic.json",
             "values": [
-                76.69,
-                74.42,
-                85.31,
-                85.81,
-                85.35,
-                85.67,
+                76.7,
+                75.62,
+                84.91,
+                85.12,
+                85.5,
                 85.79,
-                89.53,
-                89.44
+                85.42,
+                89.27,
+                89.24
             ]
         },
         {
-            "name": "205_pruning_sn49-09.json",
+            "name": "157_jaydapichon68_odell.json",
             "values": [
-                74.53,
-                78.46,
-                84.47,
-                86.66,
-                87.39,
-                88.3,
-                88.76,
-                89.19,
-                88.61
+                73.13,
+                79.89,
+                84.25,
+                86.48,
+                87.49,
+                88.62,
+                88.39,
+                88.69,
+                88.46
             ]
         },
         {
