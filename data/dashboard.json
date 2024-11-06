@@ -1,5 +1,5 @@
 {
-    "lastUpdated": "2024-11-06T15:09:42Z",
+    "lastUpdated": "2024-11-06T17:08:54Z",
     "sota": [
         {
             "name": "245_shropsdarcey84_recordative.json",
@@ -37,7 +37,7 @@
             "complexity": "High"
         },
         {
-            "name": "178_AImused_hive42.json",
+            "name": "195_shropsdarcey84_snowbells.json",
             "mnist_accuracy": 89.7,
             "cifar10_accuracy": null,
             "training_time": 0.1,
@@ -51,36 +51,29 @@
             "complexity": "High"
         },
         {
-            "name": "208_AImused_hive41.json",
+            "name": "199_shropsdarcey84_taoistic.json",
             "mnist_accuracy": 88.4,
             "cifar10_accuracy": null,
             "training_time": 0.1,
             "complexity": "High"
         },
         {
-            "name": "199_shropsdarcey84_taoistic.json",
+            "name": "157_jaydapichon68_odell.json",
             "mnist_accuracy": 89.2,
             "cifar10_accuracy": null,
             "training_time": 0.1,
             "complexity": "High"
         },
         {
-            "name": "157_jaydapichon68_odell.json",
-            "mnist_accuracy": 88.5,
-            "cifar10_accuracy": null,
-            "training_time": 0.1,
-            "complexity": "High"
-        },
-        {
             "name": "MSE (Baseline)",
-            "mnist_accuracy": 90.4,
+            "mnist_accuracy": 90.3,
             "cifar10_accuracy": null,
             "training_time": 0.1,
             "complexity": "Low"
         },
         {
             "name": "CrossEntropy (Baseline)",
-            "mnist_accuracy": 89.8,
+            "mnist_accuracy": 89.3,
             "cifar10_accuracy": null,
             "training_time": 0.1,
             "complexity": "Low"
@@ -158,7 +151,7 @@
             ]
         },
         {
-            "name": "178_AImused_hive42.json",
+            "name": "195_shropsdarcey84_snowbells.json",
             "values": [
                 74.41,
                 75.87,
@@ -186,7 +179,7 @@
             ]
         },
         {
-            "name": "208_AImused_hive41.json",
+            "name": "199_shropsdarcey84_taoistic.json",
             "values": [
                 66.35,
                 82.93,
@@ -200,7 +193,7 @@
             ]
         },
         {
-            "name": "199_shropsdarcey84_taoistic.json",
+            "name": "157_jaydapichon68_odell.json",
             "values": [
                 76.7,
                 75.62,
@@ -214,45 +207,31 @@
             ]
         },
         {
-            "name": "157_jaydapichon68_odell.json",
-            "values": [
-                73.13,
-                79.89,
-                84.25,
-                86.48,
-                87.49,
-                88.62,
-                88.39,
-                88.69,
-                88.46
-            ]
-        },
-        {
             "name": "MSE (Baseline)",
             "values": [
-                67.32,
-                77.61,
-                82.58,
-                84.5,
-                86.95,
-                87.86,
-                88.71,
-                89.99,
-                90.43
+                66.24,
+                79.07,
+                83.34,
+                85.99,
+                87.0,
+                88.11,
+                89.47,
+                90.49,
+                90.28
             ]
         },
         {
             "name": "CrossEntropy (Baseline)",
             "values": [
-                75.29,
-                82.24,
-                84.21,
-                86.62,
-                88.07,
-                88.83,
-                89.41,
-                89.98,
-                89.79
+                72.14,
+                81.45,
+                84.26,
+                86.74,
+                88.21,
+                88.64,
+                89.58,
+                89.32,
+                89.3
             ]
         }
     ]
