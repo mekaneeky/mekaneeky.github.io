@@ -1,79 +1,86 @@
 {
-    "lastUpdated": "2024-11-06T17:08:54Z",
+    "lastUpdated": "2024-11-06T20:54:39Z",
     "sota": [
         {
-            "name": "245_shropsdarcey84_recordative.json",
+            "name": "195.json",
             "mnist_accuracy": 89.6,
             "cifar10_accuracy": null,
             "training_time": 0.1,
             "complexity": "High"
         },
         {
-            "name": "177_vinningrev201_leftwinger.json",
+            "name": "147.json",
             "mnist_accuracy": 89.9,
             "cifar10_accuracy": null,
             "training_time": 0.1,
             "complexity": "High"
         },
         {
-            "name": "197_shropsdarcey84_verb.json",
+            "name": "245.json",
             "mnist_accuracy": 89.4,
             "cifar10_accuracy": null,
             "training_time": 0.1,
             "complexity": "High"
         },
         {
-            "name": "236_pruning_sn49-01.json",
+            "name": "157.json",
             "mnist_accuracy": 89.4,
             "cifar10_accuracy": null,
             "training_time": 0.1,
             "complexity": "High"
         },
         {
-            "name": "224_pruning_sn49-08.json",
-            "mnist_accuracy": 89.3,
-            "cifar10_accuracy": null,
-            "training_time": 0.1,
-            "complexity": "High"
-        },
-        {
-            "name": "195_shropsdarcey84_snowbells.json",
-            "mnist_accuracy": 89.7,
-            "cifar10_accuracy": null,
-            "training_time": 0.1,
-            "complexity": "High"
-        },
-        {
-            "name": "147_pypert_nondispersive.json",
+            "name": "199.json",
             "mnist_accuracy": 89.1,
             "cifar10_accuracy": null,
             "training_time": 0.1,
             "complexity": "High"
         },
         {
-            "name": "199_shropsdarcey84_taoistic.json",
+            "name": "178.json",
+            "mnist_accuracy": 89.7,
+            "cifar10_accuracy": null,
+            "training_time": 0.1,
+            "complexity": "High"
+        },
+        {
+            "name": "177.json",
+            "mnist_accuracy": 89.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.1,
+            "complexity": "High"
+        },
+        {
+            "name": "197.json",
             "mnist_accuracy": 88.4,
             "cifar10_accuracy": null,
             "training_time": 0.1,
             "complexity": "High"
         },
         {
-            "name": "157_jaydapichon68_odell.json",
-            "mnist_accuracy": 89.2,
+            "name": "224.json",
+            "mnist_accuracy": 89.4,
+            "cifar10_accuracy": null,
+            "training_time": 0.1,
+            "complexity": "High"
+        },
+        {
+            "name": "208.json",
+            "mnist_accuracy": 88.5,
             "cifar10_accuracy": null,
             "training_time": 0.1,
             "complexity": "High"
         },
         {
             "name": "MSE (Baseline)",
-            "mnist_accuracy": 90.3,
+            "mnist_accuracy": 90.4,
             "cifar10_accuracy": null,
             "training_time": 0.1,
             "complexity": "Low"
         },
         {
             "name": "CrossEntropy (Baseline)",
-            "mnist_accuracy": 89.3,
+            "mnist_accuracy": 89.8,
             "cifar10_accuracy": null,
             "training_time": 0.1,
             "complexity": "Low"
@@ -81,7 +88,7 @@
     ],
     "performance": [
         {
-            "name": "245_shropsdarcey84_recordative.json",
+            "name": "195.json",
             "values": [
                 74.62,
                 80.27,
@@ -95,7 +102,7 @@
             ]
         },
         {
-            "name": "177_vinningrev201_leftwinger.json",
+            "name": "147.json",
             "values": [
                 70.03,
                 83.04,
@@ -109,7 +116,7 @@
             ]
         },
         {
-            "name": "197_shropsdarcey84_verb.json",
+            "name": "245.json",
             "values": [
                 71.26,
                 81.62,
@@ -123,35 +130,35 @@
             ]
         },
         {
-            "name": "236_pruning_sn49-01.json",
+            "name": "157.json",
             "values": [
-                72.85,
-                78.08,
+                73.19,
+                77.71,
                 83.18,
-                86.14,
-                86.73,
-                88.74,
-                87.95,
-                88.62,
-                89.36
+                85.67,
+                86.63,
+                88.24,
+                88.16,
+                87.94,
+                89.37
             ]
         },
         {
-            "name": "224_pruning_sn49-08.json",
+            "name": "199.json",
             "values": [
-                74.28,
-                78.73,
-                84.23,
-                85.65,
-                86.04,
-                86.92,
-                87.27,
-                88.33,
-                89.26
+                74.07,
+                78.95,
+                83.88,
+                85.55,
+                85.13,
+                86.69,
+                86.65,
+                88.31,
+                89.15
             ]
         },
         {
-            "name": "195_shropsdarcey84_snowbells.json",
+            "name": "178.json",
             "values": [
                 74.41,
                 75.87,
@@ -165,7 +172,7 @@
             ]
         },
         {
-            "name": "147_pypert_nondispersive.json",
+            "name": "177.json",
             "values": [
                 71.99,
                 79.65,
@@ -179,7 +186,7 @@
             ]
         },
         {
-            "name": "199_shropsdarcey84_taoistic.json",
+            "name": "197.json",
             "values": [
                 66.35,
                 82.93,
@@ -193,45 +200,59 @@
             ]
         },
         {
-            "name": "157_jaydapichon68_odell.json",
+            "name": "224.json",
             "values": [
-                76.7,
-                75.62,
-                84.91,
-                85.12,
-                85.5,
+                76.69,
+                74.42,
+                85.31,
+                85.81,
+                85.35,
+                85.67,
                 85.79,
-                85.42,
-                89.27,
-                89.24
+                89.53,
+                89.44
+            ]
+        },
+        {
+            "name": "208.json",
+            "values": [
+                73.13,
+                79.89,
+                84.25,
+                86.48,
+                87.49,
+                88.62,
+                88.39,
+                88.69,
+                88.46
             ]
         },
         {
             "name": "MSE (Baseline)",
             "values": [
-                66.24,
-                79.07,
-                83.34,
-                85.99,
-                87.0,
-                88.11,
-                89.47,
-                90.49,
-                90.28
+                67.32,
+                77.61,
+                82.58,
+                84.5,
+                86.95,
+                87.86,
+                88.71,
+                89.99,
+                90.43
             ]
         },
         {
             "name": "CrossEntropy (Baseline)",
             "values": [
-                72.14,
-                81.45,
-                84.26,
-                86.74,
-                88.21,
-                88.64,
-                89.58,
-                89.32,
-                89.3
+                75.29,
+                82.24,
+                84.21,
+                86.62,
+                88.07,
+                88.83,
+                89.41,
+                89.98,
+                89.79
             ]
         }
     ]
