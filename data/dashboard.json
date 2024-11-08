@@ -1,5 +1,5 @@
 {
-    "lastUpdated": "2024-11-08T21:09:08Z",
+    "lastUpdated": "2024-11-08T23:17:50Z",
     "sota": [
         {
             "name": "85.json",
@@ -37,35 +37,35 @@
             "complexity": "High"
         },
         {
-            "name": "178.json",
+            "name": "158.json",
             "mnist_accuracy": 87.9,
             "cifar10_accuracy": null,
             "training_time": 0.1,
             "complexity": "High"
         },
         {
-            "name": "197.json",
+            "name": "144.json",
             "mnist_accuracy": 89.0,
             "cifar10_accuracy": null,
             "training_time": 0.1,
             "complexity": "High"
         },
         {
-            "name": "248.json",
+            "name": "240.json",
             "mnist_accuracy": 88.0,
             "cifar10_accuracy": null,
             "training_time": 0.1,
             "complexity": "High"
         },
         {
-            "name": "251.json",
+            "name": "197.json",
             "mnist_accuracy": 89.1,
             "cifar10_accuracy": null,
             "training_time": 0.1,
             "complexity": "High"
         },
         {
-            "name": "208.json",
+            "name": "251.json",
             "mnist_accuracy": 87.5,
             "cifar10_accuracy": null,
             "training_time": 0.1,
@@ -158,7 +158,7 @@
             ]
         },
         {
-            "name": "178.json",
+            "name": "158.json",
             "values": [
                 73.94,
                 76.96,
@@ -172,7 +172,7 @@
             ]
         },
         {
-            "name": "197.json",
+            "name": "144.json",
             "values": [
                 70.25,
                 80.01,
@@ -186,7 +186,7 @@
             ]
         },
         {
-            "name": "248.json",
+            "name": "240.json",
             "values": [
                 65.26,
                 79.65,
@@ -200,7 +200,7 @@
             ]
         },
         {
-            "name": "251.json",
+            "name": "197.json",
             "values": [
                 75.04,
                 70.66,
@@ -214,7 +214,7 @@
             ]
         },
         {
-            "name": "208.json",
+            "name": "251.json",
             "values": [
                 70.75,
                 74.76,
