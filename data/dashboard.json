@@ -1,9 +1,9 @@
 {
-    "lastUpdated": "2024-11-12T21:11:28Z",
+    "lastUpdated": "2024-11-12T23:11:35Z",
     "sota": [
         {
             "name": "77.json",
-            "mnist_accuracy": 89.7,
+            "mnist_accuracy": 89.5,
             "cifar10_accuracy": null,
             "training_time": 0.1,
             "complexity": "Medium"
@@ -90,15 +90,15 @@
         {
             "name": "77.json",
             "values": [
-                73.22,
-                79.17,
-                83.24,
-                85.87,
-                86.89,
-                87.9,
-                89.25,
-                89.47,
-                89.73
+                71.74,
+                78.02,
+                82.18,
+                84.08,
+                85.59,
+                87.28,
+                88.54,
+                88.98,
+                89.54
             ]
         },
         {
