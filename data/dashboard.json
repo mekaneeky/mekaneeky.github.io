@@ -1,16 +1,16 @@
 {
-    "lastUpdated": "2024-11-12T23:11:35Z",
+    "lastUpdated": "2024-11-13T01:07:00Z",
     "sota": [
         {
-            "name": "77.json",
-            "mnist_accuracy": 89.5,
+            "name": "211.json",
+            "mnist_accuracy": 36.7,
             "cifar10_accuracy": null,
             "training_time": 0.1,
-            "complexity": "Medium"
+            "complexity": "Low"
         },
         {
             "name": "70.json",
-            "mnist_accuracy": 89.3,
+            "mnist_accuracy": 89.0,
             "cifar10_accuracy": null,
             "training_time": 0.1,
             "complexity": "High"
@@ -88,31 +88,31 @@
     ],
     "performance": [
         {
-            "name": "77.json",
+            "name": "211.json",
             "values": [
-                71.74,
-                78.02,
-                82.18,
-                84.08,
-                85.59,
-                87.28,
-                88.54,
-                88.98,
-                89.54
+                32.75,
+                34.09,
+                35.13,
+                34.18,
+                36.7,
+                35.78,
+                36.9,
+                36.6,
+                36.69
             ]
         },
         {
             "name": "70.json",
             "values": [
-                72.55,
-                80.15,
-                77.91,
-                85.64,
-                86.34,
-                86.04,
-                87.44,
-                88.7,
-                89.32
+                75.1,
+                80.06,
+                79.6,
+                84.91,
+                86.43,
+                83.01,
+                87.46,
+                87.04,
+                89.03
             ]
         },
         {
