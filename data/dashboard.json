@@ -1,12 +1,12 @@
 {
-    "lastUpdated": "2024-11-13T13:02:48Z",
+    "lastUpdated": "2024-11-13T15:05:13Z",
     "sota": [
         {
-            "name": "3.json",
-            "mnist_accuracy": 0.0,
+            "name": "98.json",
+            "mnist_accuracy": 90.1,
             "cifar10_accuracy": null,
-            "training_time": 0.0,
-            "complexity": "Low"
+            "training_time": 0.1,
+            "complexity": "Medium"
         },
         {
             "name": "19.json",
@@ -16,13 +16,6 @@
             "complexity": "Medium"
         },
         {
-            "name": "9.json",
-            "mnist_accuracy": 0.0,
-            "cifar10_accuracy": null,
-            "training_time": 0.0,
-            "complexity": "Low"
-        },
-        {
             "name": "1.json",
             "mnist_accuracy": 0.0,
             "cifar10_accuracy": null,
@@ -30,8 +23,15 @@
             "complexity": "Low"
         },
         {
-            "name": "210.json",
-            "mnist_accuracy": 90.2,
+            "name": "40.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "15.json",
+            "mnist_accuracy": 88.8,
             "cifar10_accuracy": null,
             "training_time": 0.1,
             "complexity": "Medium"
@@ -51,21 +51,21 @@
             "complexity": "Medium"
         },
         {
-            "name": "8.json",
-            "mnist_accuracy": 0.0,
+            "name": "101.json",
+            "mnist_accuracy": 90.2,
             "cifar10_accuracy": null,
-            "training_time": 0.0,
-            "complexity": "Low"
+            "training_time": 0.1,
+            "complexity": "Medium"
         },
         {
-            "name": "25.json",
-            "mnist_accuracy": 0.0,
+            "name": "6.json",
+            "mnist_accuracy": 89.9,
             "cifar10_accuracy": null,
-            "training_time": 0.0,
-            "complexity": "Low"
+            "training_time": 0.1,
+            "complexity": "Medium"
         },
         {
-            "name": "7.json",
+            "name": "2.json",
             "mnist_accuracy": 0.0,
             "cifar10_accuracy": null,
             "training_time": 0.0,
@@ -88,19 +88,21 @@
     ],
     "performance": [
         {
-            "name": "3.json",
+            "name": "98.json",
             "values": [
-                0.0
+                75.12,
+                80.05,
+                83.42,
+                86.28,
+                87.58,
+                88.59,
+                89.37,
+                89.91,
+                90.1
             ]
         },
         {
             "name": "19.json",
-            "values": [
-                0.0
-            ]
-        },
-        {
-            "name": "9.json",
             "values": [
                 0.0
             ]
@@ -112,17 +114,23 @@
             ]
         },
         {
-            "name": "210.json",
+            "name": "40.json",
             "values": [
-                72.78,
-                83.0,
-                83.62,
-                84.43,
-                86.43,
-                87.43,
-                88.97,
-                89.23,
-                90.16
+                0.0
+            ]
+        },
+        {
+            "name": "15.json",
+            "values": [
+                66.08,
+                80.63,
+                80.99,
+                81.57,
+                84.51,
+                84.9,
+                86.92,
+                87.94,
+                88.8
             ]
         },
         {
@@ -154,19 +162,35 @@
             ]
         },
         {
-            "name": "8.json",
+            "name": "101.json",
             "values": [
-                0.0
+                71.38,
+                81.99,
+                85.35,
+                87.74,
+                88.3,
+                89.04,
+                89.12,
+                90.23,
+                90.24
             ]
         },
         {
-            "name": "25.json",
+            "name": "6.json",
             "values": [
-                0.0
+                73.14,
+                79.93,
+                83.69,
+                85.16,
+                86.35,
+                87.9,
+                88.48,
+                90.16,
+                89.93
             ]
         },
         {
-            "name": "7.json",
+            "name": "2.json",
             "values": [
                 0.0
             ]
