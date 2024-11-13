@@ -1,75 +1,75 @@
 {
-    "lastUpdated": "2024-11-13T19:09:36Z",
+    "lastUpdated": "2024-11-13T21:05:09Z",
     "sota": [
         {
-            "name": "74.json",
+            "name": "175.json",
             "mnist_accuracy": 0.0,
             "cifar10_accuracy": null,
             "training_time": 0.0,
-            "complexity": "Low"
+            "complexity": "Medium"
         },
         {
-            "name": "167.json",
+            "name": "195.json",
             "mnist_accuracy": 90.1,
             "cifar10_accuracy": null,
             "training_time": 0.1,
             "complexity": "Medium"
         },
         {
-            "name": "214.json",
-            "mnist_accuracy": 87.9,
-            "cifar10_accuracy": null,
-            "training_time": 0.1,
-            "complexity": "Medium"
-        },
-        {
-            "name": "111.json",
+            "name": "167.json",
             "mnist_accuracy": 0.0,
             "cifar10_accuracy": null,
             "training_time": 0.0,
             "complexity": "Low"
         },
         {
+            "name": "181.json",
+            "mnist_accuracy": 89.5,
+            "cifar10_accuracy": null,
+            "training_time": 0.1,
+            "complexity": "Low"
+        },
+        {
+            "name": "58.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "210.json",
+            "mnist_accuracy": 88.7,
+            "cifar10_accuracy": null,
+            "training_time": 0.1,
+            "complexity": "Medium"
+        },
+        {
             "name": "133.json",
-            "mnist_accuracy": 88.8,
+            "mnist_accuracy": 88.5,
             "cifar10_accuracy": null,
             "training_time": 0.1,
             "complexity": "Medium"
         },
         {
             "name": "0.json",
-            "mnist_accuracy": 90.9,
+            "mnist_accuracy": 90.0,
             "cifar10_accuracy": null,
             "training_time": 0.1,
             "complexity": "Medium"
         },
         {
-            "name": "226.json",
-            "mnist_accuracy": 86.6,
+            "name": "101.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Medium"
+        },
+        {
+            "name": "249.json",
+            "mnist_accuracy": 86.5,
             "cifar10_accuracy": null,
             "training_time": 0.1,
             "complexity": "Low"
-        },
-        {
-            "name": "26.json",
-            "mnist_accuracy": 89.3,
-            "cifar10_accuracy": null,
-            "training_time": 0.1,
-            "complexity": "Low"
-        },
-        {
-            "name": "112.json",
-            "mnist_accuracy": 90.4,
-            "cifar10_accuracy": null,
-            "training_time": 0.1,
-            "complexity": "Medium"
-        },
-        {
-            "name": "48.json",
-            "mnist_accuracy": 90.3,
-            "cifar10_accuracy": null,
-            "training_time": 0.1,
-            "complexity": "Medium"
         },
         {
             "name": "MSE (Baseline)",
@@ -88,13 +88,13 @@
     ],
     "performance": [
         {
-            "name": "74.json",
+            "name": "175.json",
             "values": [
                 0.0
             ]
         },
         {
-            "name": "167.json",
+            "name": "195.json",
             "values": [
                 76.38,
                 82.12,
@@ -108,107 +108,91 @@
             ]
         },
         {
-            "name": "214.json",
-            "values": [
-                71.34,
-                79.81,
-                83.16,
-                83.55,
-                84.97,
-                87.14,
-                87.39,
-                87.84,
-                87.9
-            ]
-        },
-        {
-            "name": "111.json",
+            "name": "167.json",
             "values": [
                 0.0
             ]
         },
         {
+            "name": "181.json",
+            "values": [
+                69.61,
+                82.26,
+                85.63,
+                85.32,
+                86.88,
+                87.43,
+                88.61,
+                89.4,
+                89.53
+            ]
+        },
+        {
+            "name": "58.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "210.json",
+            "values": [
+                71.72,
+                76.41,
+                81.15,
+                83.83,
+                85.13,
+                86.53,
+                86.31,
+                87.86,
+                88.72
+            ]
+        },
+        {
             "name": "133.json",
             "values": [
-                66.08,
-                80.63,
-                80.99,
-                81.57,
-                84.51,
-                84.9,
-                86.92,
-                87.94,
-                88.8
+                68.05,
+                77.99,
+                81.09,
+                83.58,
+                85.1,
+                85.19,
+                87.78,
+                87.14,
+                88.54
             ]
         },
         {
             "name": "0.json",
             "values": [
-                74.46,
-                80.28,
-                84.34,
-                86.65,
-                87.54,
-                88.07,
-                89.17,
-                90.34,
-                90.88
+                71.51,
+                78.27,
+                84.32,
+                86.46,
+                87.71,
+                87.08,
+                88.34,
+                89.73,
+                90.04
             ]
         },
         {
-            "name": "226.json",
+            "name": "101.json",
             "values": [
-                63.51,
-                73.48,
-                79.25,
-                81.59,
-                81.73,
-                82.64,
-                85.4,
-                84.85,
-                86.58
+                0.0
             ]
         },
         {
-            "name": "26.json",
+            "name": "249.json",
             "values": [
-                71.91,
-                79.29,
-                84.11,
-                86.91,
-                87.27,
-                87.9,
-                88.55,
-                89.75,
-                89.3
-            ]
-        },
-        {
-            "name": "112.json",
-            "values": [
-                73.5,
-                80.29,
-                85.03,
-                86.29,
-                87.52,
-                88.42,
-                89.2,
-                90.13,
-                90.37
-            ]
-        },
-        {
-            "name": "48.json",
-            "values": [
-                73.2,
-                82.66,
-                85.34,
-                86.84,
-                88.62,
-                88.9,
-                89.29,
-                90.21,
-                90.29
+                69.99,
+                74.86,
+                77.16,
+                81.8,
+                83.18,
+                83.85,
+                85.32,
+                85.85,
+                86.48
             ]
         },
         {
