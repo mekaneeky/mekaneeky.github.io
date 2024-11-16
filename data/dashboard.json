@@ -1,5 +1,5 @@
 {
-    "lastUpdated": "2024-11-16T19:17:51Z",
+    "lastUpdated": "2024-11-16T21:21:14Z",
     "sota": [
         {
             "name": "85.json",
@@ -23,7 +23,7 @@
             "complexity": "High"
         },
         {
-            "name": "105.json",
+            "name": "245.json",
             "mnist_accuracy": 87.7,
             "cifar10_accuracy": null,
             "training_time": 0.1,
@@ -130,7 +130,7 @@
             ]
         },
         {
-            "name": "105.json",
+            "name": "245.json",
             "values": [
                 65.14,
                 80.42,
