@@ -1,5 +1,5 @@
 {
-    "lastUpdated": "2024-11-18T15:07:18Z",
+    "lastUpdated": "2024-11-18T17:06:29Z",
     "sota": [
         {
             "name": "3.json",
@@ -23,6 +23,13 @@
             "complexity": "High"
         },
         {
+            "name": "57.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "High"
+        },
+        {
             "name": "50.json",
             "mnist_accuracy": 0.0,
             "cifar10_accuracy": null,
@@ -31,13 +38,6 @@
         },
         {
             "name": "19.json",
-            "mnist_accuracy": 88.8,
-            "cifar10_accuracy": null,
-            "training_time": 0.1,
-            "complexity": "High"
-        },
-        {
-            "name": "36.json",
             "mnist_accuracy": 88.7,
             "cifar10_accuracy": null,
             "training_time": 0.1,
@@ -122,6 +122,12 @@
             ]
         },
         {
+            "name": "57.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
             "name": "50.json",
             "values": [
                 0.0
@@ -129,20 +135,6 @@
         },
         {
             "name": "19.json",
-            "values": [
-                66.08,
-                80.63,
-                80.99,
-                81.57,
-                84.51,
-                84.9,
-                86.92,
-                87.94,
-                88.8
-            ]
-        },
-        {
-            "name": "36.json",
             "values": [
                 71.72,
                 76.41,
