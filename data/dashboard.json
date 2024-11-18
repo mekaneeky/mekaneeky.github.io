@@ -1,5 +1,5 @@
 {
-    "lastUpdated": "2024-11-18T05:10:11Z",
+    "lastUpdated": "2024-11-18T07:05:07Z",
     "sota": [
         {
             "name": "3.json",
@@ -16,7 +16,7 @@
             "complexity": "High"
         },
         {
-            "name": "57.json",
+            "name": "175.json",
             "mnist_accuracy": 0.0,
             "cifar10_accuracy": null,
             "training_time": 0.0,
@@ -51,17 +51,17 @@
             "complexity": "High"
         },
         {
-            "name": "199.json",
-            "mnist_accuracy": 88.0,
+            "name": "54.json",
+            "mnist_accuracy": 88.5,
             "cifar10_accuracy": null,
             "training_time": 0.1,
             "complexity": "High"
         },
         {
-            "name": "54.json",
-            "mnist_accuracy": 88.6,
+            "name": "61.json",
+            "mnist_accuracy": 0.0,
             "cifar10_accuracy": null,
-            "training_time": 0.1,
+            "training_time": 0.0,
             "complexity": "High"
         },
         {
@@ -116,7 +116,7 @@
             ]
         },
         {
-            "name": "57.json",
+            "name": "175.json",
             "values": [
                 0.0
             ]
@@ -170,31 +170,23 @@
             ]
         },
         {
-            "name": "199.json",
+            "name": "54.json",
             "values": [
-                69.75,
-                75.82,
-                83.16,
-                84.81,
-                84.86,
-                84.27,
-                85.76,
-                88.16,
-                88.0
+                72.42,
+                78.99,
+                83.7,
+                86.58,
+                86.52,
+                86.08,
+                86.77,
+                89.04,
+                88.52
             ]
         },
         {
-            "name": "54.json",
+            "name": "61.json",
             "values": [
-                74.64,
-                78.62,
-                83.56,
-                85.28,
-                85.81,
-                86.47,
-                86.75,
-                87.62,
-                88.62
+                0.0
             ]
         },
         {
