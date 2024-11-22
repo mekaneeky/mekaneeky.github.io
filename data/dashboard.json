@@ -1,111 +1,4566 @@
 {
-    "lastUpdated": "2024-10-26T20:06:53Z",
+    "lastUpdated": "2024-11-22T00:06:23Z",
     "sota": [
         {
-            "name": "6_Leviathanium_hivetrain_ml.json",
-            "mnist_accuracy": 89.8,
+            "name": "186_pypert_karela.json",
+            "mnist_accuracy": 9.2,
             "cifar10_accuracy": null,
-            "training_time": 0.1,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "5_UrbanAlchemie_hive_hf_2_3.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
             "complexity": "High"
         },
         {
-            "name": "46_Easysnipper_automl.json",
-            "mnist_accuracy": 17.0,
+            "name": "177_vinningrev201_sliest.json",
+            "mnist_accuracy": 10.1,
             "cifar10_accuracy": null,
-            "training_time": 0.1,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "44_nad010286_loss_20_10e.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "198_shropsdarcey84_nouveaux.json",
+            "mnist_accuracy": 12.4,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "218_mamung_coba.json",
+            "mnist_accuracy": 8.6,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "147_vouu_truongmodel1.json",
+            "mnist_accuracy": 34.6,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
             "complexity": "High"
         },
         {
-            "name": "43_CrypticMax_dml.json",
+            "name": "58_nad010286_loss_20_07e.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "211_leixa_lexspear.json",
+            "mnist_accuracy": 10.2,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "73_passfh_god_20.json",
+            "mnist_accuracy": 34.9,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "179_vinningrev201_bereavers.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "54_nad010286_loss_20_13e.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "97_dexserbia_49-W17.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "62_vup2p_hive_2003.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "40_db900_4-49.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "221_PlanAPlanB_494.json",
+            "mnist_accuracy": 9.2,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "222_AImused_hive50.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "125_db900_11-49.json",
+            "mnist_accuracy": 35.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "20_passfh_god_14.json",
+            "mnist_accuracy": 36.3,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "146_vouu_491154.json",
+            "mnist_accuracy": 35.3,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "204_mamung_hivetrain.json",
+            "mnist_accuracy": 11.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "172_damon98_ck2hk2.json",
+            "mnist_accuracy": 26.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "229_vouu_229_49409.json",
+            "mnist_accuracy": 34.8,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "6_db900_2-49.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "160_jaydapichon68_hawked.json",
+            "mnist_accuracy": 9.4,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "249_shropsdarcey84_cinchonaceous.json",
+            "mnist_accuracy": 11.4,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "30_db900_27-49.json",
+            "mnist_accuracy": 34.9,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "247_shropsdarcey84_outjuggling.json",
+            "mnist_accuracy": 9.2,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "243_shropsdarcey84_guiser.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "239_db900_14-49.json",
+            "mnist_accuracy": 10.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "149_db900_13-49.json",
+            "mnist_accuracy": 8.5,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "127_UrbanAlchemie_hive_hf_2_11.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "233_adamvvu_sn49-08-new.json",
+            "mnist_accuracy": 33.7,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "72_vup2p_hive_2010.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "90_adamvvu_sn49-10-new.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "81_vouu_81_491154.json",
+            "mnist_accuracy": 35.5,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "255_passfh_god_26.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "75_vouu_test5.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "245_shropsdarcey84_unsymmetry.json",
+            "mnist_accuracy": 11.8,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "93_dexserbia_49-W14.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "104_CraftedHue_AutoML_3_7.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "196_shropsdarcey84_prunelle.json",
+            "mnist_accuracy": 10.2,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "170_UrbanAlchemie_hive_hf_2_1.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "3_dexserbia_49-W11.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "236_nad010286_loss_20_08e.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "154_jaydapichon68_prower.json",
+            "mnist_accuracy": 10.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "71_passfh_god_19.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "15_db900_3-49.json",
+            "mnist_accuracy": 8.6,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "24_adamvvu_sn49-01-new.json",
+            "mnist_accuracy": 10.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "162_passfh_god_27.json",
+            "mnist_accuracy": 8.6,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "165_db900_30-49.json",
+            "mnist_accuracy": 9.8,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "161_db900_29-49.json",
+            "mnist_accuracy": 10.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "228_nad010286_loss_19_05e.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "244_shropsdarcey84_crossties.json",
+            "mnist_accuracy": 10.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "18_bionot_sn49-5.json",
+            "mnist_accuracy": 17.9,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "8_UrbanAlchemie_hive_hf_2_5.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "140_passfh_god_8.json",
+            "mnist_accuracy": 35.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "47_CraftedHue_AutoML_1_6.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "7_generalElephant_sn49-1.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "174_passfh_god_29.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "159_dexserbia_49-W20.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "119_passfh_god_7.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "235_nad010286_loss_19_06e.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "0_artao_m49n3.json",
+            "mnist_accuracy": 35.3,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "134_UrbanAlchemie_hive_hf_2_9.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "171_vinningrev201_reencourage.json",
+            "mnist_accuracy": 12.4,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "150_vinningrev201_transitron.json",
+            "mnist_accuracy": 10.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "103_CraftedHue_AutoML_1_8.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "41_dexserbia_49-W10.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "102_passfh_god_1.json",
+            "mnist_accuracy": 5.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "32_mgrtsv_bm3-2zm08.json",
+            "mnist_accuracy": 14.2,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "231_artao_m49n4.json",
+            "mnist_accuracy": 35.9,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "113_passfh_god_3.json",
+            "mnist_accuracy": 8.6,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "22_vouu_test3.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "158_jaydapichon68_rhythmless.json",
+            "mnist_accuracy": 10.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "240_shropsdarcey84_nonacuteness.json",
+            "mnist_accuracy": 10.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "116_UrbanAlchemie_hive_hf_2_7.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "12_generalElephant_sn49-3.json",
+            "mnist_accuracy": 35.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "203_shropsdarcey84_superstructral.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "194_db900_1-49.json",
+            "mnist_accuracy": 10.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "151_pypert_characterizer.json",
+            "mnist_accuracy": 10.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "144_generalElephant_sn49-9.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "78_passfh_god_22.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "27_passfh_god_16.json",
+            "mnist_accuracy": 31.5,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "139_bgyngrh_sn49.json",
+            "mnist_accuracy": 8.6,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "212_passfh_god_30.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "152_AImused_hive45.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "143_generalElephant_sn49-8.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "86_adamvvu_sn49-06-new.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "206_shropsdarcey84_postgenial.json",
+            "mnist_accuracy": 18.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "34_bionot_sn49-1.json",
+            "mnist_accuracy": 14.5,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "214_CraftedHue_AutoML_1_2.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "185_vinningrev201_ramees.json",
+            "mnist_accuracy": 10.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "191_db900_9-49.json",
+            "mnist_accuracy": 11.4,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "118_artao_m49n1.json",
+            "mnist_accuracy": 10.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "133_nad010286_loss_19_03e.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "189_ckoozzzu_49.json",
+            "mnist_accuracy": 34.3,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "242_dimasik87_sn49_1.json",
             "mnist_accuracy": 9.7,
             "cifar10_accuracy": null,
-            "training_time": 0.1,
+            "training_time": 0.06,
             "complexity": "High"
         },
         {
-            "name": "MSE (Baseline)",
-            "mnist_accuracy": 90.3,
+            "name": "138_UrbanAlchemie_hive_hf_2_13.json",
+            "mnist_accuracy": 36.1,
             "cifar10_accuracy": null,
-            "training_time": 0.1,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "142_generalElephant_sn49-7.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "114_db900_21-49.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "195_shropsdarcey84_cycadean.json",
+            "mnist_accuracy": 9.7,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "117_CraftedHue_AutoML_3_10.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "129_passfh_god_4.json",
+            "mnist_accuracy": 12.5,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "130_db900_28-49.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "213_myntfarm_loss_function.json",
+            "mnist_accuracy": 10.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "122_passfh_god_6.json",
+            "mnist_accuracy": 10.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "217_passfh_god_5.json",
+            "mnist_accuracy": 33.7,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "50_nad010286_loss_20_11e.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "14_generalElephant_sn49-5.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "251_shropsdarcey84_inequitably.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "1_dexserbia_49-W15.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "51_nad010286_loss_20_12e.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "205_on13chain_gene_49_1.json",
+            "mnist_accuracy": 9.8,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "28_bionot_sn49-2.json",
+            "mnist_accuracy": 35.6,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "106_CraftedHue_AutoML_3_9.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "173_pypert_winterfeed.json",
+            "mnist_accuracy": 4.3,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "254_UrbanAlchemie_hive_hf_2_4.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "164_vinningrev201_frenchwoman.json",
+            "mnist_accuracy": 10.3,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "52_AImused_hive52.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "148_generalElephant_sn49-10.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "77_passfh_god_11.json",
+            "mnist_accuracy": 31.5,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "26_CraftedHue_AutoML_1_5.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "108_passfh_god_28.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "182_jaydapichon68_vacouf.json",
+            "mnist_accuracy": 10.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "70_passfh_god_18.json",
+            "mnist_accuracy": 35.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "46_AImused_hive49.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "63_vup2p_hive_2004.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "234_mb00g_enigma.json",
+            "mnist_accuracy": 14.3,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "105_db900_19-49.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "248_AImused_hive44.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "136_UrbanAlchemie_hive_hf_2_12.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "98_db900_17-49.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "137_UrbanAlchemie_hive_hf_2_14.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "94_dexserbia_49-W16.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "225_db900_7-49.json",
+            "mnist_accuracy": 18.8,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "166_AImused_hive47.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "252_shropsdarcey84_domed.json",
+            "mnist_accuracy": 10.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "207_CraftedHue_AutoML_3_4.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "10_vouu_10_49999.json",
+            "mnist_accuracy": 34.9,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "101_db900_18-49.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "215_mgrtsv_n32-dhmm01v2.json",
+            "mnist_accuracy": 13.6,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "123_AImused_hive51.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "83_UrbanAlchemie_hive_hf_2_6.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "237_passfh_god_24.json",
+            "mnist_accuracy": 10.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "85_dexserbia_49-W7.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "201_passfh_god_12.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "115_CraftedHue_AutoML_3_8.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "16_AImused_hive48.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "43_dexserbia_49-W11.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "65_vup2p_hive_2006.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "53_passfh_god_10.json",
+            "mnist_accuracy": 36.3,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "169_CraftedHue_AutoML_1_1.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "96_db900_16-49.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "227_vouu_49232.json",
+            "mnist_accuracy": 34.9,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "69_passfh_god_17.json",
+            "mnist_accuracy": 35.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "209_bionot_sn49-555-2.json",
+            "mnist_accuracy": 13.7,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "232_adamvvu_sn49-03-new.json",
+            "mnist_accuracy": 33.7,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "120_db900_22-49.json",
+            "mnist_accuracy": 9.9,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "91_dexserbia_49-W13.json",
+            "mnist_accuracy": 36.3,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "74_UrbanAlchemie_hive_hf_2_2.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "175_vinningrev201_immunopathologist.json",
+            "mnist_accuracy": 10.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "48_CraftedHue_AutoML_3_3.json",
+            "mnist_accuracy": 35.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "76_passfh_god_21.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "167_vinningrev201_warder.json",
+            "mnist_accuracy": 10.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "253_db900_15-49.json",
+            "mnist_accuracy": 10.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "92_AImused_hive53.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "89_adamvvu_sn49-09-new.json",
+            "mnist_accuracy": 31.5,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "33_adamvvu_sn49-04-new.json",
+            "mnist_accuracy": 31.5,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "67_vup2p_hive_2108.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "17_generalElephant_sn49-6.json",
+            "mnist_accuracy": 34.9,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "163_db900_8-49.json",
+            "mnist_accuracy": 10.2,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "2_db900_5-49.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "9_dexserbia_49-W18.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "145_passfh_god_9.json",
+            "mnist_accuracy": 13.6,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "220_db900_26-49.json",
+            "mnist_accuracy": 9.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "112_CraftedHue_AutoML_1_4.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "35_adamvvu_sn49-05-new.json",
+            "mnist_accuracy": 33.7,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "168_dexserbia_49-W19.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "197_shropsdarcey84_intermetatarsal.json",
+            "mnist_accuracy": 13.6,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "135_nad010286_loss_20_04e.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "61_vup2p_hive_2102.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "55_CraftedHue_AutoML_3_6.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "202_PlanAPlanB_493.json",
+            "mnist_accuracy": 17.4,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "56_nad010286_loss_20_14e.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "49_db900_6-49.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "216_hansolo19_20590.json",
+            "mnist_accuracy": 33.2,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "176_pypert_saviouress.json",
+            "mnist_accuracy": 13.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "4_vup2p_hive_2001.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "23_vouu_test.json",
+            "mnist_accuracy": 35.9,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "155_PlanAPlanB_491.json",
+            "mnist_accuracy": 11.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "223_tarun99121_taooo.json",
+            "mnist_accuracy": 29.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "128_UrbanAlchemie_hive_hf_2_10.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "111_CraftedHue_AutoML_1_3.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "88_AImused_hive46.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "36_db900_25-49.json",
+            "mnist_accuracy": 36.3,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "156_jaydapichon68_ghafir.json",
+            "mnist_accuracy": 10.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "84_vouu_test4.json",
+            "mnist_accuracy": 35.3,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "188_jaydapichon68_twinlike.json",
+            "mnist_accuracy": 10.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "68_vup2p_hive_2109.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "80_CraftedHue_AutoML_3_5.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "180_pypert_irreproachably.json",
+            "mnist_accuracy": 12.8,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "57_nad010286_loss_20_15e.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "25_passfh_god_15.json",
+            "mnist_accuracy": 35.7,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "31_bionot_sn49-7.json",
+            "mnist_accuracy": 17.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "13_generalElephant_sn49-4.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "87_adamvvu_sn49-07-new.json",
+            "mnist_accuracy": 31.5,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "79_passfh_god_23.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "200_PlanAPlanB_492.json",
+            "mnist_accuracy": 10.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "183_vinningrev201_rechange.json",
+            "mnist_accuracy": 10.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "199_shropsdarcey84_galeche.json",
+            "mnist_accuracy": 19.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "208_artao_m49n1.json",
+            "mnist_accuracy": 10.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "11_generalElephant_sn49-2.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "19_passfh_god_13.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "241_shropsdarcey84_seascapist.json",
+            "mnist_accuracy": 9.5,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "121_AImused_hive54.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "100_CraftedHue_AutoML_1_7.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "187_CraftedHue_AutoML_3_1.json",
+            "mnist_accuracy": 35.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "21_db900_10-49.json",
+            "mnist_accuracy": 14.2,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "157_jaydapichon68_seethe.json",
+            "mnist_accuracy": 10.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "39_nad010286_loss_20_09e.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "210_vouu_mmol.json",
+            "mnist_accuracy": 35.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "110_db900_20-49.json",
+            "mnist_accuracy": 35.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "132_db900_23-49.json",
+            "mnist_accuracy": 12.4,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "250_passfh_god_25.json",
+            "mnist_accuracy": 11.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "246_shropsdarcey84_preelimination.json",
+            "mnist_accuracy": 10.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "226_CraftedHue_AutoML_3_2.json",
+            "mnist_accuracy": 35.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "126_db900_12-49.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "64_vup2p_hive_2005.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "107_passfh_god_2.json",
+            "mnist_accuracy": 8.6,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "230_vouu_49117.json",
+            "mnist_accuracy": 35.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "181_jaydapichon68_ganophyllite.json",
+            "mnist_accuracy": 10.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "124_UrbanAlchemie_hive_hf_2_8.json",
+            "mnist_accuracy": 36.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "184_pypert_moingwena.json",
+            "mnist_accuracy": 10.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Medium"
+        },
+        {
+            "name": "37_db900_24-49.json",
+            "mnist_accuracy": 35.1,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "High"
+        },
+        {
+            "name": "66_vup2p_hive_2007.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "219_barrybadpak_hmbarend.json",
+            "mnist_accuracy": 35.6,
+            "cifar10_accuracy": null,
+            "training_time": 0.06,
+            "complexity": "Low"
+        },
+        {
+            "name": "224_adamvvu_sn49-02-new.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
+            "complexity": "Low"
+        },
+        {
+            "name": "153_jaydapichon68_bebump.json",
+            "mnist_accuracy": 0.0,
+            "cifar10_accuracy": null,
+            "training_time": 0.0,
             "complexity": "Low"
         },
         {
             "name": "CrossEntropy (Baseline)",
-            "mnist_accuracy": 90.3,
+            "mnist_accuracy": 35.4,
             "cifar10_accuracy": null,
-            "training_time": 0.1,
+            "training_time": 0.06,
             "complexity": "Low"
         }
     ],
     "performance": [
         {
-            "name": "6_Leviathanium_hivetrain_ml.json",
+            "name": "186_pypert_karela.json",
             "values": [
-                74.42,
-                80.98,
-                82.11,
-                85.24,
-                87.14,
-                87.94,
-                88.59,
-                88.92,
-                89.76
+                13.58,
+                8.11,
+                11.72,
+                12.31,
+                8.92,
+                6.64,
+                9.66,
+                9.39,
+                9.17
             ]
         },
         {
-            "name": "46_Easysnipper_automl.json",
+            "name": "5_UrbanAlchemie_hive_hf_2_3.json",
             "values": [
-                58.33,
-                50.26,
-                44.95,
-                41.13,
-                27.45,
-                20.11,
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "177_vinningrev201_sliest.json",
+            "values": [
+                6.81,
+                6.21,
+                6.39,
+                8.87,
+                8.85,
+                10.02,
+                9.99,
+                9.32,
+                10.05
+            ]
+        },
+        {
+            "name": "44_nad010286_loss_20_10e.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "198_shropsdarcey84_nouveaux.json",
+            "values": [
+                14.48,
+                15.38,
+                15.73,
+                15.33,
+                14.72,
+                13.65,
+                12.75,
+                12.31,
+                12.45
+            ]
+        },
+        {
+            "name": "218_mamung_coba.json",
+            "values": [
+                10.6,
+                6.84,
+                9.07,
+                10.57,
+                6.75,
+                8.18,
+                8.91,
+                8.92,
+                8.64
+            ]
+        },
+        {
+            "name": "147_vouu_truongmodel1.json",
+            "values": [
+                21.01,
+                25.56,
+                27.35,
+                29.48,
+                30.13,
+                32.43,
+                32.62,
+                32.13,
+                34.63
+            ]
+        },
+        {
+            "name": "58_nad010286_loss_20_07e.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "211_leixa_lexspear.json",
+            "values": [
+                11.3,
+                10.83,
+                9.75,
+                9.43,
+                9.99,
+                10.05,
+                10.11,
+                10.23,
+                10.25
+            ]
+        },
+        {
+            "name": "73_passfh_god_20.json",
+            "values": [
+                20.63,
+                25.29,
+                26.93,
+                29.21,
+                30.49,
+                32.61,
+                33.6,
+                32.21,
+                34.87
+            ]
+        },
+        {
+            "name": "179_vinningrev201_bereavers.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "54_nad010286_loss_20_13e.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "97_dexserbia_49-W17.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "62_vup2p_hive_2003.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "40_db900_4-49.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "221_PlanAPlanB_494.json",
+            "values": [
+                13.96,
+                11.44,
+                11.76,
+                9.67,
+                8.47,
+                8.48,
+                8.71,
+                8.94,
+                9.22
+            ]
+        },
+        {
+            "name": "222_AImused_hive50.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "125_db900_11-49.json",
+            "values": [
+                20.35,
+                25.23,
+                26.89,
+                29.2,
+                30.0,
+                32.64,
+                33.22,
+                31.53,
+                35.13
+            ]
+        },
+        {
+            "name": "20_passfh_god_14.json",
+            "values": [
+                22.38,
+                27.46,
+                29.09,
+                27.35,
+                31.76,
+                33.55,
+                33.05,
+                32.64,
+                36.26
+            ]
+        },
+        {
+            "name": "146_vouu_491154.json",
+            "values": [
+                21.18,
+                26.03,
+                28.63,
+                29.17,
+                29.65,
+                32.15,
+                33.01,
+                31.19,
+                35.28
+            ]
+        },
+        {
+            "name": "204_mamung_hivetrain.json",
+            "values": [
+                8.18,
+                10.12,
+                8.5,
+                8.24,
+                8.44,
+                8.68,
+                10.76,
+                10.81,
+                11.07
+            ]
+        },
+        {
+            "name": "172_damon98_ck2hk2.json",
+            "values": [
+                19.79,
+                22.4,
+                22.19,
+                24.96,
+                25.91,
+                25.58,
+                26.14,
+                27.03,
+                26.09
+            ]
+        },
+        {
+            "name": "229_vouu_229_49409.json",
+            "values": [
+                21.16,
+                26.01,
+                28.59,
+                29.41,
+                29.39,
+                32.32,
+                32.72,
+                30.85,
+                34.76
+            ]
+        },
+        {
+            "name": "6_db900_2-49.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "160_jaydapichon68_hawked.json",
+            "values": [
+                10.66,
+                9.34,
+                9.64,
+                10.18,
+                9.45,
+                9.58,
+                8.77,
+                9.11,
+                9.37
+            ]
+        },
+        {
+            "name": "249_shropsdarcey84_cinchonaceous.json",
+            "values": [
+                10.55,
+                12.58,
+                14.71,
+                12.98,
+                11.86,
+                9.9,
+                9.89,
+                11.79,
+                11.42
+            ]
+        },
+        {
+            "name": "30_db900_27-49.json",
+            "values": [
+                20.39,
+                25.24,
+                26.81,
+                29.1,
+                30.52,
+                32.72,
+                33.3,
+                31.85,
+                34.91
+            ]
+        },
+        {
+            "name": "247_shropsdarcey84_outjuggling.json",
+            "values": [
+                7.5,
+                6.92,
+                5.31,
+                8.03,
+                8.31,
+                8.92,
+                9.07,
+                8.76,
+                9.15
+            ]
+        },
+        {
+            "name": "243_shropsdarcey84_guiser.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "239_db900_14-49.json",
+            "values": [
+                6.81,
+                6.21,
+                6.39,
+                8.87,
+                8.85,
+                10.02,
+                9.99,
+                9.32,
+                10.05
+            ]
+        },
+        {
+            "name": "149_db900_13-49.json",
+            "values": [
+                8.52,
+                8.52,
+                8.52,
+                8.52,
+                8.52,
+                8.52,
+                8.52,
+                8.52,
+                8.52
+            ]
+        },
+        {
+            "name": "127_UrbanAlchemie_hive_hf_2_11.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "233_adamvvu_sn49-08-new.json",
+            "values": [
+                21.26,
+                26.52,
+                26.04,
+                28.3,
+                30.02,
+                31.88,
+                30.6,
+                31.51,
+                33.72
+            ]
+        },
+        {
+            "name": "72_vup2p_hive_2010.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "90_adamvvu_sn49-10-new.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "81_vouu_81_491154.json",
+            "values": [
+                21.34,
+                26.49,
+                27.82,
+                29.47,
+                30.39,
+                32.34,
+                32.51,
+                32.72,
+                35.55
+            ]
+        },
+        {
+            "name": "255_passfh_god_26.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "75_vouu_test5.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "245_shropsdarcey84_unsymmetry.json",
+            "values": [
+                9.5,
+                10.98,
+                10.77,
+                9.36,
+                8.76,
+                11.35,
+                12.33,
+                12.86,
+                11.82
+            ]
+        },
+        {
+            "name": "93_dexserbia_49-W14.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "104_CraftedHue_AutoML_3_7.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "196_shropsdarcey84_prunelle.json",
+            "values": [
+                9.56,
+                9.86,
+                10.46,
+                11.04,
+                10.68,
+                9.9,
+                10.17,
+                10.73,
+                10.18
+            ]
+        },
+        {
+            "name": "170_UrbanAlchemie_hive_hf_2_1.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "3_dexserbia_49-W11.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "236_nad010286_loss_20_08e.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "154_jaydapichon68_prower.json",
+            "values": [
+                12.74,
+                12.49,
+                10.09,
+                10.0,
+                10.0,
+                10.0,
+                10.0,
+                10.0,
+                10.0
+            ]
+        },
+        {
+            "name": "71_passfh_god_19.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "15_db900_3-49.json",
+            "values": [
+                10.03,
+                10.11,
+                9.75,
+                7.64,
+                9.38,
+                9.44,
+                7.98,
+                8.49,
+                8.64
+            ]
+        },
+        {
+            "name": "24_adamvvu_sn49-01-new.json",
+            "values": [
+                9.41,
+                10.0,
+                10.0,
+                10.0,
+                10.0,
+                10.0,
+                10.0,
+                10.0,
+                10.0
+            ]
+        },
+        {
+            "name": "162_passfh_god_27.json",
+            "values": [
+                10.81,
+                9.73,
+                11.07,
+                13.12,
+                10.89,
+                8.97,
+                8.76,
+                8.96,
+                8.59
+            ]
+        },
+        {
+            "name": "165_db900_30-49.json",
+            "values": [
+                10.0,
+                11.03,
+                10.75,
+                9.54,
+                11.35,
+                10.16,
+                10.31,
+                10.04,
+                9.8
+            ]
+        },
+        {
+            "name": "161_db900_29-49.json",
+            "values": [
+                6.78,
+                6.36,
+                6.52,
+                8.85,
+                8.97,
+                10.03,
+                10.03,
+                9.18,
+                9.99
+            ]
+        },
+        {
+            "name": "228_nad010286_loss_19_05e.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "244_shropsdarcey84_crossties.json",
+            "values": [
+                6.8,
+                6.27,
+                6.2,
+                8.89,
+                8.81,
+                10.0,
+                10.04,
+                8.96,
+                10.05
+            ]
+        },
+        {
+            "name": "18_bionot_sn49-5.json",
+            "values": [
+                19.0,
+                16.96,
+                17.29,
+                17.41,
+                17.66,
+                17.72,
+                17.83,
+                17.95,
+                17.94
+            ]
+        },
+        {
+            "name": "8_UrbanAlchemie_hive_hf_2_5.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "140_passfh_god_8.json",
+            "values": [
+                20.72,
+                25.67,
+                27.3,
+                29.15,
+                29.51,
+                32.5,
+                32.66,
+                32.09,
+                35.05
+            ]
+        },
+        {
+            "name": "47_CraftedHue_AutoML_1_6.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "7_generalElephant_sn49-1.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "174_passfh_god_29.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "159_dexserbia_49-W20.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "119_passfh_god_7.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "235_nad010286_loss_19_06e.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "0_artao_m49n3.json",
+            "values": [
+                23.8,
+                27.31,
+                28.2,
+                28.5,
+                29.96,
+                32.56,
+                32.85,
+                32.46,
+                35.27
+            ]
+        },
+        {
+            "name": "134_UrbanAlchemie_hive_hf_2_9.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "171_vinningrev201_reencourage.json",
+            "values": [
+                14.48,
+                15.38,
+                15.73,
+                15.34,
+                14.72,
+                13.67,
+                12.72,
+                12.31,
+                12.45
+            ]
+        },
+        {
+            "name": "150_vinningrev201_transitron.json",
+            "values": [
+                9.58,
+                10.0,
+                10.0,
+                10.0,
+                10.0,
+                10.0,
+                10.0,
+                10.0,
+                10.0
+            ]
+        },
+        {
+            "name": "103_CraftedHue_AutoML_1_8.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "41_dexserbia_49-W10.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "102_passfh_god_1.json",
+            "values": [
+                5.54,
+                6.23,
+                6.5,
+                6.62,
+                6.46,
+                5.75,
+                5.61,
+                5.3,
+                5.1
+            ]
+        },
+        {
+            "name": "32_mgrtsv_bm3-2zm08.json",
+            "values": [
+                14.01,
+                15.54,
+                15.27,
+                15.22,
+                15.24,
+                14.95,
+                14.74,
+                14.36,
+                14.2
+            ]
+        },
+        {
+            "name": "231_artao_m49n4.json",
+            "values": [
+                22.38,
+                27.49,
+                29.06,
+                27.32,
+                31.62,
+                33.57,
+                33.26,
+                33.12,
+                35.95
+            ]
+        },
+        {
+            "name": "113_passfh_god_3.json",
+            "values": [
+                10.03,
+                10.11,
+                9.75,
+                7.64,
+                9.38,
+                9.44,
+                7.98,
+                8.49,
+                8.64
+            ]
+        },
+        {
+            "name": "22_vouu_test3.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "158_jaydapichon68_rhythmless.json",
+            "values": [
+                6.65,
+                6.01,
+                5.63,
+                8.98,
+                8.96,
+                9.98,
+                9.97,
+                8.99,
+                10.04
+            ]
+        },
+        {
+            "name": "240_shropsdarcey84_nonacuteness.json",
+            "values": [
+                6.92,
+                5.98,
+                6.17,
+                8.9,
+                9.05,
+                9.98,
+                10.07,
+                8.81,
+                10.05
+            ]
+        },
+        {
+            "name": "116_UrbanAlchemie_hive_hf_2_7.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "12_generalElephant_sn49-3.json",
+            "values": [
+                21.03,
+                25.96,
+                28.2,
+                28.79,
+                28.92,
+                31.67,
+                33.0,
+                30.84,
+                35.02
+            ]
+        },
+        {
+            "name": "203_shropsdarcey84_superstructral.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "194_db900_1-49.json",
+            "values": [
+                8.76,
+                10.0,
+                10.0,
+                10.0,
+                10.0,
+                10.0,
+                10.0,
+                10.0,
+                10.0
+            ]
+        },
+        {
+            "name": "151_pypert_characterizer.json",
+            "values": [
+                9.25,
+                9.82,
+                11.24,
+                10.56,
+                10.58,
+                10.72,
+                10.54,
+                10.14,
+                10.11
+            ]
+        },
+        {
+            "name": "144_generalElephant_sn49-9.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "78_passfh_god_22.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "27_passfh_god_16.json",
+            "values": [
+                16.5,
+                20.19,
+                22.72,
+                22.73,
+                26.62,
+                27.75,
+                29.04,
+                25.88,
+                31.5
+            ]
+        },
+        {
+            "name": "139_bgyngrh_sn49.json",
+            "values": [
+                10.03,
+                10.11,
+                9.75,
+                7.64,
+                9.38,
+                9.44,
+                7.98,
+                8.49,
+                8.64
+            ]
+        },
+        {
+            "name": "212_passfh_god_30.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "152_AImused_hive45.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "143_generalElephant_sn49-8.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "86_adamvvu_sn49-06-new.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "206_shropsdarcey84_postgenial.json",
+            "values": [
+                17.1,
+                17.41,
+                18.38,
+                18.96,
+                17.79,
                 17.03,
-                16.18,
-                16.99
+                17.54,
+                18.13,
+                18.13
             ]
         },
         {
-            "name": "43_CrypticMax_dml.json",
+            "name": "34_bionot_sn49-1.json",
             "values": [
-                34.11,
-                24.32,
-                14.34,
-                9.74,
-                9.74,
-                9.74,
-                9.74,
-                9.74,
-                9.74
+                10.9,
+                11.62,
+                11.23,
+                11.05,
+                11.05,
+                10.75,
+                10.53,
+                12.92,
+                14.47
             ]
         },
         {
-            "name": "MSE (Baseline)",
+            "name": "214_CraftedHue_AutoML_1_2.json",
             "values": [
-                63.36,
-                77.75,
-                82.63,
-                85.02,
-                86.65,
-                87.94,
-                89.13,
-                89.9,
-                90.32
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "185_vinningrev201_ramees.json",
+            "values": [
+                6.8,
+                6.27,
+                6.2,
+                8.89,
+                8.81,
+                10.0,
+                10.04,
+                8.96,
+                10.05
+            ]
+        },
+        {
+            "name": "191_db900_9-49.json",
+            "values": [
+                8.76,
+                8.43,
+                7.2,
+                8.73,
+                9.68,
+                10.43,
+                12.34,
+                11.38,
+                11.4
+            ]
+        },
+        {
+            "name": "118_artao_m49n1.json",
+            "values": [
+                9.04,
+                12.08,
+                10.5,
+                10.31,
+                11.03,
+                12.64,
+                10.34,
+                10.39,
+                10.02
+            ]
+        },
+        {
+            "name": "133_nad010286_loss_19_03e.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "189_ckoozzzu_49.json",
+            "values": [
+                22.79,
+                26.93,
+                28.79,
+                28.72,
+                30.43,
+                32.87,
+                32.18,
+                32.61,
+                34.34
+            ]
+        },
+        {
+            "name": "242_dimasik87_sn49_1.json",
+            "values": [
+                8.57,
+                10.09,
+                11.07,
+                11.2,
+                11.57,
+                11.49,
+                9.58,
+                9.21,
+                9.65
+            ]
+        },
+        {
+            "name": "138_UrbanAlchemie_hive_hf_2_13.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "142_generalElephant_sn49-7.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "114_db900_21-49.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "195_shropsdarcey84_cycadean.json",
+            "values": [
+                7.81,
+                10.85,
+                7.9,
+                10.27,
+                8.96,
+                8.11,
+                10.43,
+                6.36,
+                9.68
+            ]
+        },
+        {
+            "name": "117_CraftedHue_AutoML_3_10.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "129_passfh_god_4.json",
+            "values": [
+                14.48,
+                15.38,
+                15.73,
+                15.33,
+                14.72,
+                13.65,
+                12.75,
+                12.31,
+                12.46
+            ]
+        },
+        {
+            "name": "130_db900_28-49.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "213_myntfarm_loss_function.json",
+            "values": [
+                10.93,
+                10.06,
+                9.73,
+                10.0,
+                10.0,
+                10.0,
+                10.0,
+                10.0,
+                10.0
+            ]
+        },
+        {
+            "name": "122_passfh_god_6.json",
+            "values": [
+                9.94,
+                10.0,
+                10.0,
+                10.0,
+                10.0,
+                10.0,
+                10.0,
+                10.0,
+                10.0
+            ]
+        },
+        {
+            "name": "217_passfh_god_5.json",
+            "values": [
+                21.26,
+                26.52,
+                26.04,
+                28.3,
+                30.02,
+                31.88,
+                30.6,
+                31.51,
+                33.72
+            ]
+        },
+        {
+            "name": "50_nad010286_loss_20_11e.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "14_generalElephant_sn49-5.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "251_shropsdarcey84_inequitably.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "1_dexserbia_49-W15.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "51_nad010286_loss_20_12e.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "205_on13chain_gene_49_1.json",
+            "values": [
+                11.51,
+                9.97,
+                10.01,
+                10.3,
+                10.6,
+                10.85,
+                10.15,
+                10.47,
+                9.77
+            ]
+        },
+        {
+            "name": "28_bionot_sn49-2.json",
+            "values": [
+                23.15,
+                27.27,
+                28.38,
+                27.6,
+                30.92,
+                33.31,
+                32.51,
+                33.04,
+                35.63
+            ]
+        },
+        {
+            "name": "106_CraftedHue_AutoML_3_9.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "173_pypert_winterfeed.json",
+            "values": [
+                9.96,
+                6.12,
+                5.53,
+                5.65,
+                5.79,
+                4.62,
+                4.62,
+                5.99,
+                4.26
+            ]
+        },
+        {
+            "name": "254_UrbanAlchemie_hive_hf_2_4.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "164_vinningrev201_frenchwoman.json",
+            "values": [
+                10.16,
+                9.68,
+                9.58,
+                7.86,
+                9.93,
+                9.05,
+                9.38,
+                7.91,
+                10.26
+            ]
+        },
+        {
+            "name": "52_AImused_hive52.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "148_generalElephant_sn49-10.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "77_passfh_god_11.json",
+            "values": [
+                16.5,
+                20.19,
+                22.72,
+                22.73,
+                26.62,
+                27.75,
+                29.04,
+                25.88,
+                31.5
+            ]
+        },
+        {
+            "name": "26_CraftedHue_AutoML_1_5.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "108_passfh_god_28.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "182_jaydapichon68_vacouf.json",
+            "values": [
+                10.93,
+                10.06,
+                9.73,
+                10.0,
+                10.0,
+                10.0,
+                10.0,
+                10.0,
+                10.0
+            ]
+        },
+        {
+            "name": "70_passfh_god_18.json",
+            "values": [
+                21.74,
+                26.8,
+                28.49,
+                28.4,
+                30.35,
+                33.21,
+                33.93,
+                31.86,
+                35.11
+            ]
+        },
+        {
+            "name": "46_AImused_hive49.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "63_vup2p_hive_2004.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "234_mb00g_enigma.json",
+            "values": [
+                15.15,
+                16.32,
+                10.56,
+                11.54,
+                11.53,
+                12.32,
+                13.94,
+                14.06,
+                14.33
+            ]
+        },
+        {
+            "name": "105_db900_19-49.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "248_AImused_hive44.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "136_UrbanAlchemie_hive_hf_2_12.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "98_db900_17-49.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "137_UrbanAlchemie_hive_hf_2_14.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "94_dexserbia_49-W16.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "225_db900_7-49.json",
+            "values": [
+                17.16,
+                17.49,
+                18.34,
+                18.88,
+                18.74,
+                18.59,
+                18.88,
+                18.94,
+                18.78
+            ]
+        },
+        {
+            "name": "166_AImused_hive47.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "252_shropsdarcey84_domed.json",
+            "values": [
+                9.75,
+                9.07,
+                9.76,
+                10.52,
+                10.69,
+                10.08,
+                10.49,
+                9.82,
+                10.02
+            ]
+        },
+        {
+            "name": "207_CraftedHue_AutoML_3_4.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "10_vouu_10_49999.json",
+            "values": [
+                20.39,
+                25.24,
+                26.81,
+                29.1,
+                30.52,
+                32.72,
+                33.3,
+                31.85,
+                34.91
+            ]
+        },
+        {
+            "name": "101_db900_18-49.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "215_mgrtsv_n32-dhmm01v2.json",
+            "values": [
+                16.6,
+                16.35,
+                16.29,
+                16.37,
+                15.03,
+                14.82,
+                15.79,
+                12.49,
+                13.56
+            ]
+        },
+        {
+            "name": "123_AImused_hive51.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "83_UrbanAlchemie_hive_hf_2_6.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "237_passfh_god_24.json",
+            "values": [
+                7.81,
+                10.83,
+                7.99,
+                10.08,
+                10.43,
+                9.59,
+                10.36,
+                4.94,
+                10.11
+            ]
+        },
+        {
+            "name": "85_dexserbia_49-W7.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "201_passfh_god_12.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "115_CraftedHue_AutoML_3_8.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "16_AImused_hive48.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "43_dexserbia_49-W11.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "65_vup2p_hive_2006.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "53_passfh_god_10.json",
+            "values": [
+                22.38,
+                27.46,
+                29.09,
+                27.35,
+                31.76,
+                33.55,
+                33.05,
+                32.64,
+                36.26
+            ]
+        },
+        {
+            "name": "169_CraftedHue_AutoML_1_1.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "96_db900_16-49.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "227_vouu_49232.json",
+            "values": [
+                20.39,
+                25.24,
+                26.81,
+                29.1,
+                30.52,
+                32.72,
+                33.3,
+                31.85,
+                34.91
+            ]
+        },
+        {
+            "name": "69_passfh_god_17.json",
+            "values": [
+                21.74,
+                26.8,
+                28.49,
+                28.4,
+                30.35,
+                33.21,
+                33.93,
+                31.86,
+                35.11
+            ]
+        },
+        {
+            "name": "209_bionot_sn49-555-2.json",
+            "values": [
+                20.2,
+                19.39,
+                18.49,
+                16.17,
+                15.79,
+                15.02,
+                13.53,
+                14.91,
+                13.65
+            ]
+        },
+        {
+            "name": "232_adamvvu_sn49-03-new.json",
+            "values": [
+                21.26,
+                26.52,
+                26.04,
+                28.3,
+                30.02,
+                31.88,
+                30.6,
+                31.51,
+                33.72
+            ]
+        },
+        {
+            "name": "120_db900_22-49.json",
+            "values": [
+                9.26,
+                9.12,
+                9.42,
+                8.59,
+                10.05,
+                10.1,
+                10.0,
+                9.89,
+                9.92
+            ]
+        },
+        {
+            "name": "91_dexserbia_49-W13.json",
+            "values": [
+                22.04,
+                26.8,
+                28.67,
+                28.49,
+                30.8,
+                33.05,
+                34.25,
+                32.57,
+                36.28
+            ]
+        },
+        {
+            "name": "74_UrbanAlchemie_hive_hf_2_2.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "175_vinningrev201_immunopathologist.json",
+            "values": [
+                9.79,
+                11.07,
+                11.06,
+                9.78,
+                10.97,
+                11.12,
+                10.58,
+                10.09,
+                10.1
+            ]
+        },
+        {
+            "name": "48_CraftedHue_AutoML_3_3.json",
+            "values": [
+                21.74,
+                26.8,
+                28.49,
+                28.4,
+                30.35,
+                33.21,
+                33.93,
+                31.86,
+                35.11
+            ]
+        },
+        {
+            "name": "76_passfh_god_21.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "167_vinningrev201_warder.json",
+            "values": [
+                12.74,
+                12.49,
+                10.09,
+                10.0,
+                10.0,
+                10.0,
+                10.0,
+                10.0,
+                10.0
+            ]
+        },
+        {
+            "name": "253_db900_15-49.json",
+            "values": [
+                9.41,
+                10.0,
+                10.0,
+                10.0,
+                10.0,
+                10.0,
+                10.0,
+                10.0,
+                10.0
+            ]
+        },
+        {
+            "name": "92_AImused_hive53.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "89_adamvvu_sn49-09-new.json",
+            "values": [
+                16.5,
+                20.19,
+                22.72,
+                22.73,
+                26.62,
+                27.75,
+                29.04,
+                25.88,
+                31.5
+            ]
+        },
+        {
+            "name": "33_adamvvu_sn49-04-new.json",
+            "values": [
+                16.5,
+                20.19,
+                22.72,
+                22.73,
+                26.62,
+                27.75,
+                29.04,
+                25.88,
+                31.5
+            ]
+        },
+        {
+            "name": "67_vup2p_hive_2108.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "17_generalElephant_sn49-6.json",
+            "values": [
+                20.39,
+                25.24,
+                26.81,
+                29.1,
+                30.52,
+                32.72,
+                33.3,
+                31.85,
+                34.91
+            ]
+        },
+        {
+            "name": "163_db900_8-49.json",
+            "values": [
+                9.56,
+                9.86,
+                10.46,
+                11.04,
+                10.68,
+                9.9,
+                10.17,
+                10.73,
+                10.18
+            ]
+        },
+        {
+            "name": "2_db900_5-49.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "9_dexserbia_49-W18.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "145_passfh_god_9.json",
+            "values": [
+                16.6,
+                16.4,
+                16.32,
+                16.37,
+                14.63,
+                14.29,
+                15.48,
+                12.66,
+                13.55
+            ]
+        },
+        {
+            "name": "220_db900_26-49.json",
+            "values": [
+                9.71,
+                8.74,
+                8.62,
+                8.85,
+                9.21,
+                10.19,
+                9.2,
+                8.95,
+                9.02
+            ]
+        },
+        {
+            "name": "112_CraftedHue_AutoML_1_4.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "35_adamvvu_sn49-05-new.json",
+            "values": [
+                21.26,
+                26.52,
+                26.04,
+                28.3,
+                30.02,
+                31.88,
+                30.6,
+                31.51,
+                33.72
+            ]
+        },
+        {
+            "name": "168_dexserbia_49-W19.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "197_shropsdarcey84_intermetatarsal.json",
+            "values": [
+                16.6,
+                16.35,
+                16.29,
+                16.37,
+                15.03,
+                14.82,
+                15.78,
+                12.49,
+                13.56
+            ]
+        },
+        {
+            "name": "135_nad010286_loss_20_04e.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "61_vup2p_hive_2102.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "55_CraftedHue_AutoML_3_6.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "202_PlanAPlanB_493.json",
+            "values": [
+                19.02,
+                23.57,
+                22.63,
+                19.49,
+                17.47,
+                20.98,
+                23.54,
+                18.64,
+                17.43
+            ]
+        },
+        {
+            "name": "56_nad010286_loss_20_14e.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "49_db900_6-49.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "216_hansolo19_20590.json",
+            "values": [
+                20.85,
+                26.49,
+                25.94,
+                28.44,
+                28.86,
+                32.33,
+                32.19,
+                30.94,
+                33.21
+            ]
+        },
+        {
+            "name": "176_pypert_saviouress.json",
+            "values": [
+                6.98,
+                10.47,
+                11.66,
+                11.45,
+                14.27,
+                15.79,
+                16.36,
+                14.31,
+                12.97
+            ]
+        },
+        {
+            "name": "4_vup2p_hive_2001.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "23_vouu_test.json",
+            "values": [
+                21.56,
+                26.91,
+                28.01,
+                28.79,
+                30.51,
+                32.63,
+                33.78,
+                32.05,
+                35.91
+            ]
+        },
+        {
+            "name": "155_PlanAPlanB_491.json",
+            "values": [
+                6.52,
+                10.05,
+                10.99,
+                13.04,
+                13.78,
+                12.7,
+                13.3,
+                9.89,
+                11.08
+            ]
+        },
+        {
+            "name": "223_tarun99121_taooo.json",
+            "values": [
+                20.05,
+                24.85,
+                26.24,
+                27.19,
+                26.43,
+                27.99,
+                29.07,
+                27.74,
+                29.01
+            ]
+        },
+        {
+            "name": "128_UrbanAlchemie_hive_hf_2_10.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "111_CraftedHue_AutoML_1_3.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "88_AImused_hive46.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "36_db900_25-49.json",
+            "values": [
+                22.38,
+                27.46,
+                29.09,
+                27.35,
+                31.76,
+                33.55,
+                33.05,
+                32.64,
+                36.26
+            ]
+        },
+        {
+            "name": "156_jaydapichon68_ghafir.json",
+            "values": [
+                6.81,
+                6.21,
+                6.39,
+                8.87,
+                8.85,
+                10.02,
+                9.99,
+                9.32,
+                10.05
+            ]
+        },
+        {
+            "name": "84_vouu_test4.json",
+            "values": [
+                21.18,
+                26.03,
+                28.63,
+                29.17,
+                29.65,
+                32.15,
+                33.01,
+                31.19,
+                35.28
+            ]
+        },
+        {
+            "name": "188_jaydapichon68_twinlike.json",
+            "values": [
+                6.78,
+                6.36,
+                6.52,
+                8.85,
+                8.97,
+                10.03,
+                10.03,
+                9.18,
+                9.99
+            ]
+        },
+        {
+            "name": "68_vup2p_hive_2109.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "80_CraftedHue_AutoML_3_5.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "180_pypert_irreproachably.json",
+            "values": [
+                9.65,
+                9.82,
+                12.62,
+                12.73,
+                10.93,
+                11.85,
+                11.4,
+                13.23,
+                12.75
+            ]
+        },
+        {
+            "name": "57_nad010286_loss_20_15e.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "25_passfh_god_15.json",
+            "values": [
+                21.8,
+                26.93,
+                28.4,
+                28.01,
+                30.09,
+                33.3,
+                33.17,
+                32.44,
+                35.67
+            ]
+        },
+        {
+            "name": "31_bionot_sn49-7.json",
+            "values": [
+                12.6,
+                16.69,
+                11.44,
+                8.86,
+                13.48,
+                15.11,
+                10.83,
+                10.16,
+                17.07
+            ]
+        },
+        {
+            "name": "13_generalElephant_sn49-4.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "87_adamvvu_sn49-07-new.json",
+            "values": [
+                16.5,
+                20.19,
+                22.72,
+                22.73,
+                26.62,
+                27.75,
+                29.04,
+                25.88,
+                31.5
+            ]
+        },
+        {
+            "name": "79_passfh_god_23.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "200_PlanAPlanB_492.json",
+            "values": [
+                14.7,
+                14.35,
+                10.43,
+                9.95,
+                10.3,
+                10.25,
+                10.24,
+                10.04,
+                10.09
+            ]
+        },
+        {
+            "name": "183_vinningrev201_rechange.json",
+            "values": [
+                10.93,
+                10.06,
+                9.73,
+                10.0,
+                10.0,
+                10.0,
+                10.0,
+                10.0,
+                10.0
+            ]
+        },
+        {
+            "name": "199_shropsdarcey84_galeche.json",
+            "values": [
+                15.52,
+                17.97,
+                17.79,
+                17.49,
+                17.59,
+                17.63,
+                18.3,
+                18.59,
+                18.99
+            ]
+        },
+        {
+            "name": "208_artao_m49n1.json",
+            "values": [
+                9.04,
+                12.08,
+                10.5,
+                10.31,
+                11.03,
+                12.64,
+                10.34,
+                10.39,
+                10.02
+            ]
+        },
+        {
+            "name": "11_generalElephant_sn49-2.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "19_passfh_god_13.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "241_shropsdarcey84_seascapist.json",
+            "values": [
+                12.77,
+                12.81,
+                9.34,
+                12.11,
+                10.24,
+                9.26,
+                9.06,
+                9.33,
+                9.46
+            ]
+        },
+        {
+            "name": "121_AImused_hive54.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "100_CraftedHue_AutoML_1_7.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "187_CraftedHue_AutoML_3_1.json",
+            "values": [
+                21.74,
+                26.8,
+                28.49,
+                28.4,
+                30.35,
+                33.21,
+                33.93,
+                31.86,
+                35.11
+            ]
+        },
+        {
+            "name": "21_db900_10-49.json",
+            "values": [
+                14.01,
+                15.54,
+                15.27,
+                15.22,
+                15.24,
+                14.95,
+                14.74,
+                14.36,
+                14.2
+            ]
+        },
+        {
+            "name": "157_jaydapichon68_seethe.json",
+            "values": [
+                6.92,
+                5.98,
+                6.17,
+                8.9,
+                9.05,
+                9.98,
+                10.07,
+                8.81,
+                10.05
+            ]
+        },
+        {
+            "name": "39_nad010286_loss_20_09e.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "210_vouu_mmol.json",
+            "values": [
+                20.94,
+                25.58,
+                27.3,
+                29.59,
+                30.17,
+                32.65,
+                33.0,
+                31.9,
+                34.96
+            ]
+        },
+        {
+            "name": "110_db900_20-49.json",
+            "values": [
+                21.74,
+                26.8,
+                28.49,
+                28.4,
+                30.35,
+                33.21,
+                33.93,
+                31.86,
+                35.11
+            ]
+        },
+        {
+            "name": "132_db900_23-49.json",
+            "values": [
+                14.55,
+                15.62,
+                15.77,
+                15.35,
+                14.78,
+                13.77,
+                12.82,
+                12.39,
+                12.38
+            ]
+        },
+        {
+            "name": "250_passfh_god_25.json",
+            "values": [
+                6.52,
+                10.05,
+                10.99,
+                13.04,
+                13.78,
+                12.7,
+                13.3,
+                9.89,
+                11.08
+            ]
+        },
+        {
+            "name": "246_shropsdarcey84_preelimination.json",
+            "values": [
+                12.74,
+                12.49,
+                10.09,
+                10.0,
+                10.0,
+                10.0,
+                10.0,
+                10.0,
+                10.0
+            ]
+        },
+        {
+            "name": "226_CraftedHue_AutoML_3_2.json",
+            "values": [
+                21.74,
+                26.8,
+                28.49,
+                28.4,
+                30.35,
+                33.21,
+                33.93,
+                31.86,
+                35.11
+            ]
+        },
+        {
+            "name": "126_db900_12-49.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "64_vup2p_hive_2005.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "107_passfh_god_2.json",
+            "values": [
+                10.03,
+                10.11,
+                9.75,
+                7.64,
+                9.38,
+                9.44,
+                7.98,
+                8.49,
+                8.64
+            ]
+        },
+        {
+            "name": "230_vouu_49117.json",
+            "values": [
+                20.94,
+                25.58,
+                27.3,
+                29.59,
+                30.17,
+                32.65,
+                33.0,
+                31.9,
+                34.96
+            ]
+        },
+        {
+            "name": "181_jaydapichon68_ganophyllite.json",
+            "values": [
+                11.76,
+                10.03,
+                9.95,
+                10.0,
+                10.0,
+                9.99,
+                10.0,
+                10.0,
+                10.0
+            ]
+        },
+        {
+            "name": "124_UrbanAlchemie_hive_hf_2_8.json",
+            "values": [
+                21.42,
+                26.63,
+                28.29,
+                29.47,
+                30.03,
+                32.92,
+                31.75,
+                32.85,
+                36.1
+            ]
+        },
+        {
+            "name": "184_pypert_moingwena.json",
+            "values": [
+                9.41,
+                9.41,
+                10.57,
+                8.76,
+                10.0,
+                8.87,
+                10.48,
+                9.87,
+                10.07
+            ]
+        },
+        {
+            "name": "37_db900_24-49.json",
+            "values": [
+                21.74,
+                26.8,
+                28.49,
+                28.4,
+                30.35,
+                33.21,
+                33.93,
+                31.86,
+                35.11
+            ]
+        },
+        {
+            "name": "66_vup2p_hive_2007.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "219_barrybadpak_hmbarend.json",
+            "values": [
+                23.15,
+                27.27,
+                28.38,
+                27.6,
+                30.92,
+                33.31,
+                32.51,
+                33.04,
+                35.63
+            ]
+        },
+        {
+            "name": "224_adamvvu_sn49-02-new.json",
+            "values": [
+                0.0
+            ]
+        },
+        {
+            "name": "153_jaydapichon68_bebump.json",
+            "values": [
+                0.0
             ]
         },
         {
             "name": "CrossEntropy (Baseline)",
             "values": [
-                70.95,
-                83.02,
-                82.52,
-                85.7,
-                87.7,
-                87.84,
-                88.94,
-                89.15,
-                90.26
+                22.75,
+                26.43,
+                28.55,
+                28.72,
+                30.87,
+                32.82,
+                32.48,
+                32.14,
+                35.36
             ]
         }
     ]
