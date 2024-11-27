@@ -4,21 +4,21 @@
         {
             "name": "11_generalElephant_sn49-2.json",
             "mnist_accuracy": 31.1,
-            "loss_function": null,
+            "loss_function": "safe_sub(safe_sub(safe_add(safe_exp(safe_sub(safe_add(safe_exp(one), sin(safe_mul(y, safe_mul(safe_exp(safe_log(y)), x)))), safe_exp(safe_exp(one)))), safe_add(safe_exp(safe_sub(safe_add(safe_exp(safe_div(safe_mul(safe_div(half, one), safe_exp(half)), one)), relu(std(safe_sub(safe_sub(safe_exp(zero), safe_sub(safe_log(y), sigmoid(safe_mul(safe_mul(half, x), safe_mul(safe_exp(sin(half)), x))))), safe_sub(safe_log(y), safe_sub(safe_log(y), cos(safe_sub(safe_log(y), safe_div(x, safe_exp(sin(half))))))))))), safe_exp(safe_exp(one)))), safe_sub(safe_add(safe_log(safe_mul(safe_add(safe_exp(safe_div(safe_mul(safe_div(half, one), safe_exp(half)), one)), square(cube(cube(safe_exp(sin(half)))))), safe_add(one, square(cube(safe_exp(sin(half))))))), tanh(std(safe_sub(safe_sub(x, safe_sub(safe_log(y), sigmoid(safe_mul(safe_mul(half, x), safe_mul(safe_mul(safe_add(y, one), safe_log(y)), x))))), safe_sub(safe_log(y), safe_sub(safe_log(y), cos(safe_sub(safe_log(y), safe_div(x, safe_exp(sin(half))))))))))), one))), safe_mul(half, safe_mul(safe_mul(safe_mul(y,safe_add(one,square(cube(cube(half))))),safe_add(one,square(cube(cube(half))))), half))), safe_mul(half, half))",
             "training_time": 0.0,
             "complexity": "High"
         },
         {
             "name": "12_generalElephant_sn49-3.json",
             "mnist_accuracy": 30.9,
-            "loss_function": null,
+            "loss_function": "safe_sub(safe_sub(safe_add(safe_exp(safe_sub(safe_add(safe_exp(one), sin(safe_mul(y, safe_mul(safe_exp(safe_log(y)), x)))), safe_exp(safe_exp(one)))), safe_add(safe_exp(safe_sub(safe_add(safe_exp(safe_div(safe_mul(safe_div(half, one), safe_exp(half)), one)), relu(std(safe_sub(safe_sub(safe_exp(zero), safe_sub(safe_log(y), sigmoid(safe_mul(safe_mul(half, x), safe_mul(safe_exp(sin(half)), x))))), safe_sub(safe_log(y), safe_sub(safe_log(y), cos(safe_sub(safe_log(y), safe_div(x, safe_exp(sin(half))))))))))), safe_exp(safe_exp(one)))), safe_sub(safe_add(safe_log(safe_mul(safe_add(safe_exp(safe_div(safe_mul(safe_div(half, one), safe_exp(half)), one)), square(cube(cube(safe_exp(sin(half)))))), safe_add(one, square(cube(safe_exp(sin(half))))))), tanh(std(safe_sub(safe_sub(x, safe_sub(safe_log(y), sigmoid(safe_mul(safe_mul(half, x), safe_mul(safe_mul(safe_add(y, one), safe_log(y)), x))))), safe_sub(safe_log(y), safe_sub(safe_log(y), cos(safe_sub(safe_log(y), safe_div(x, safe_exp(sin(half))))))))))), one))), safe_mul(half, safe_mul(safe_mul(safe_mul(y,safe_add(one,square(cube(cube(half))))),safe_add(one,square(cube(cube(half))))), half))), safe_mul(half, safe_mul(half, half)))",
             "training_time": 0.0,
             "complexity": "High"
         },
         {
             "name": "13_generalElephant_sn49-4.json",
             "mnist_accuracy": 30.9,
-            "loss_function": null,
+            "loss_function": "safe_add(safe_sub(safe_add(safe_exp(safe_sub(safe_add(safe_exp(one), sin(safe_mul(y, safe_mul(safe_exp(safe_log(y)), x)))), safe_exp(safe_exp(one)))), safe_add(safe_exp(safe_sub(safe_add(safe_exp(safe_div(safe_mul(safe_div(half, one), safe_exp(half)), one)), relu(std(safe_sub(safe_sub(safe_exp(zero), safe_sub(safe_log(y), sigmoid(safe_mul(safe_mul(half, x), safe_mul(safe_exp(sin(half)), x))))), safe_sub(safe_log(y), safe_sub(safe_log(y), cos(safe_sub(safe_log(y), safe_div(x, safe_exp(sin(half))))))))))), safe_exp(safe_exp(one)))), safe_sub(safe_add(safe_log(safe_mul(safe_add(safe_exp(safe_div(safe_mul(safe_div(half, one), safe_exp(half)), one)), square(cube(cube(safe_exp(sin(half)))))), safe_add(one, square(cube(safe_exp(sin(half))))))), tanh(std(safe_sub(safe_sub(x, safe_sub(safe_log(y), sigmoid(safe_mul(safe_mul(half, x), safe_mul(safe_mul(safe_add(y, one), safe_log(y)), x))))), safe_sub(safe_log(y), safe_sub(safe_log(y), cos(safe_sub(safe_log(y), safe_div(x, safe_exp(sin(half))))))))))), one))), safe_mul(half, safe_mul(safe_mul(safe_mul(y,safe_add(one,square(cube(cube(half))))),safe_add(one,square(cube(cube(half))))), half))), safe_mul(half, safe_mul(half, half)))",
             "training_time": 0.0,
             "complexity": "High"
         },
@@ -32,7 +32,7 @@
         {
             "name": "9_dexserbia_49-W18.json",
             "mnist_accuracy": 30.7,
-            "loss_function": null,
+            "loss_function": "safe_sub(safe_sub(safe_add(safe_exp(safe_sub(safe_add(safe_exp(one), sin(safe_mul(y, safe_mul(safe_exp(safe_log(y)), x)))), safe_exp(safe_exp(one)))), safe_add(safe_exp(safe_sub(safe_add(safe_exp(safe_div(safe_mul(safe_div(half, one), safe_exp(half)), one)), relu(std(safe_sub(safe_sub(safe_exp(zero), safe_sub(safe_log(y), sigmoid(safe_mul(safe_mul(half, x), safe_mul(safe_exp(sin(half)), x))))), safe_sub(safe_log(y), safe_sub(safe_log(y), cos(safe_sub(safe_log(y), safe_div(x, safe_exp(sin(half))))))))))), safe_exp(safe_exp(one)))), safe_sub(safe_add(safe_log(safe_mul(safe_add(safe_exp(safe_div(safe_mul(safe_div(half, one), safe_exp(half)), one)), square(cube(cube(safe_exp(sin(half)))))), safe_add(one, square(cube(safe_exp(sin(half))))))), tanh(std(safe_sub(safe_sub(x, safe_sub(safe_log(y), sigmoid(safe_mul(safe_mul(half, x), safe_mul(safe_mul(safe_add(y, one), safe_log(y)), x))))), safe_sub(safe_log(y), safe_sub(safe_log(y), cos(safe_sub(safe_log(y), safe_div(x, safe_exp(sin(half))))))))))), one))), safe_mul(half, safe_mul(safe_sub(safe_mul(y,safe_sub(one,square(cube(cube(half))))),square(cube(cube(half)))), half))), safe_mul(half, safe_div(half, half)))",
             "training_time": 0.0,
             "complexity": "High"
         },
