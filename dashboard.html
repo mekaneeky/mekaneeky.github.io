@@ -159,7 +159,7 @@
         </div>
 
         <div class="terminal-window">
-            <h2 class="section-title">Performance Over Time</h2>
+            <h2 class="section-title">Performance Over Time - Character Accuracy %</h2>
             <div class="chart-container">
                 <canvas id="performanceChart"></canvas>
             </div>
@@ -194,7 +194,7 @@
                 tr.innerHTML = `
                     <td>${row.name}</td>
                     <td>${row.mnist_accuracy}%</td>
-                    <td>${row.loss_function}%</td>
+                    <td>${row.loss_function}</td>
                     <td>${row.training_time}x</td>
                     <td>${row.complexity}</td>
                 `;
