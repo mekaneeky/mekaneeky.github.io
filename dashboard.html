@@ -126,7 +126,7 @@
                 <thead>
                     <tr>
                         <th>Loss Function</th>
-                        <th>Shakespeare Accuracy</th>
+                        <th>Shakespeare Validation Loss (Cross Entropy)</th>
                         <th>Loss Function</th>
                         <th>Training Time</th>
                         <th>Complexity</th>
@@ -159,7 +159,7 @@
         </div>
 
         <div class="terminal-window">
-            <h2 class="section-title">Performance Over Time - Character Accuracy - 900 batches. eval every 100</h2>
+            <h2 class="section-title">Performance Over Time - Validation Cross Entropy - 90 batches. eval every 10</h2>
             <div class="chart-container">
                 <canvas id="performanceChart"></canvas>
             </div>
@@ -193,7 +193,7 @@
                 const tr = document.createElement('tr');
                 tr.innerHTML = `
                     <td>${row.name}</td>
-                    <td>${row.mnist_accuracy}%</td>
+                    <td>${row.mnist_accuracy}</td>
                     <td>${row.loss_function}</td>
                     <td>${row.training_time}x</td>
                     <td>${row.complexity}</td>
