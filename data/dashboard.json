@@ -1,153 +1,182 @@
 {
-    "lastUpdated": "2024-12-02T17:46:34Z",
+    "lastUpdated": "2024-12-15T15:33:03Z",
     "sota": [
         {
-            "name": "11_generalElephant_sn49-2.json",
-            "mnist_accuracy": 0.9,
+            "name": "4_vup2p_hive_4_01.json",
+            "mnist_accuracy": 43.8,
             "cifar10_accuracy": null,
-            "training_time": 0.0,
+            "training_time": 0.64,
             "complexity": "High"
         },
         {
-            "name": "14_generalElephant_sn49-5.json",
-            "mnist_accuracy": 0.9,
+            "name": "79_passfh_god_23.json",
+            "mnist_accuracy": 44.0,
             "cifar10_accuracy": null,
-            "training_time": 0.0,
+            "training_time": 0.64,
             "complexity": "High"
         },
         {
-            "name": "12_generalElephant_sn49-3.json",
-            "mnist_accuracy": 0.9,
+            "name": "25_passfh_god_15.json",
+            "mnist_accuracy": 43.8,
             "cifar10_accuracy": null,
-            "training_time": 0.0,
+            "training_time": 0.64,
             "complexity": "High"
         },
         {
-            "name": "13_generalElephant_sn49-4.json",
-            "mnist_accuracy": 0.9,
+            "name": "3_dexserbia_49-W12.json",
+            "mnist_accuracy": 43.9,
             "cifar10_accuracy": null,
-            "training_time": 0.0,
+            "training_time": 0.64,
             "complexity": "High"
         },
         {
-            "name": "9_dexserbia_49-W18.json",
-            "mnist_accuracy": 0.9,
+            "name": "16_DeSci_4s49_5_08.json",
+            "mnist_accuracy": 43.8,
             "cifar10_accuracy": null,
-            "training_time": 0.0,
+            "training_time": 0.64,
             "complexity": "High"
         },
         {
             "name": "MSE (Baseline)",
-            "mnist_accuracy": 1.3,
+            "mnist_accuracy": 41.7,
             "cifar10_accuracy": null,
-            "training_time": 0.0,
+            "training_time": 0.64,
             "complexity": "Low"
         },
         {
             "name": "CrossEntropy (Baseline)",
-            "mnist_accuracy": 1.1,
+            "mnist_accuracy": 43.9,
             "cifar10_accuracy": null,
-            "training_time": 0.0,
+            "training_time": 0.64,
+            "complexity": "Low"
+        },
+        {
+            "name": "evolved (Baseline)",
+            "mnist_accuracy": 43.9,
+            "cifar10_accuracy": null,
+            "training_time": 0.64,
             "complexity": "Low"
         }
     ],
     "performance": [
         {
-            "name": "11_generalElephant_sn49-2.json",
+            "name": "4_vup2p_hive_4_01.json",
             "values": [
-                1.1,
-                1.09,
-                1.04,
-                1.01,
-                0.94,
-                0.92,
-                0.91,
-                0.91,
-                0.91
+                34.1,
+                37.07,
+                38.68,
+                40.75,
+                39.79,
+                42.07,
+                41.41,
+                42.9,
+                43.09,
+                43.77
             ]
         },
         {
-            "name": "14_generalElephant_sn49-5.json",
+            "name": "79_passfh_god_23.json",
             "values": [
-                1.1,
-                1.09,
-                1.04,
-                1.01,
-                0.95,
-                0.92,
-                0.91,
-                0.91,
-                0.9
+                34.1,
+                37.42,
+                38.97,
+                40.01,
+                40.28,
+                42.3,
+                40.44,
+                41.48,
+                42.53,
+                43.98
             ]
         },
         {
-            "name": "12_generalElephant_sn49-3.json",
+            "name": "25_passfh_god_15.json",
             "values": [
-                1.1,
-                1.09,
-                1.04,
-                1.01,
-                0.94,
-                0.93,
-                0.91,
-                0.91,
-                0.9
+                34.1,
+                37.07,
+                38.68,
+                40.75,
+                39.79,
+                42.07,
+                41.41,
+                42.9,
+                43.09,
+                43.77
             ]
         },
         {
-            "name": "13_generalElephant_sn49-4.json",
+            "name": "3_dexserbia_49-W12.json",
             "values": [
-                1.1,
-                1.09,
-                1.04,
-                1.01,
-                0.94,
-                0.92,
-                0.91,
-                0.91,
-                0.91
+                34.1,
+                37.07,
+                38.68,
+                40.69,
+                39.75,
+                42.19,
+                41.71,
+                42.55,
+                43.08,
+                43.94
             ]
         },
         {
-            "name": "9_dexserbia_49-W18.json",
+            "name": "16_DeSci_4s49_5_08.json",
             "values": [
-                1.1,
-                1.09,
-                1.04,
-                1.01,
-                0.95,
-                0.92,
-                0.91,
-                0.91,
-                0.9
+                34.1,
+                37.07,
+                38.68,
+                40.75,
+                39.79,
+                42.07,
+                41.41,
+                42.9,
+                43.09,
+                43.77
             ]
         },
         {
             "name": "MSE (Baseline)",
             "values": [
-                1.32,
-                1.31,
-                1.31,
-                1.31,
-                1.31,
-                1.31,
-                1.31,
-                1.31,
-                1.31
+                31.22,
+                35.48,
+                35.69,
+                35.81,
+                37.28,
+                39.5,
+                38.3,
+                41.05,
+                41.04,
+                41.68
             ]
         },
         {
             "name": "CrossEntropy (Baseline)",
             "values": [
-                1.16,
-                1.13,
-                1.11,
-                1.09,
-                1.1,
-                1.12,
-                1.11,
-                1.09,
-                1.09
+                33.63,
+                38.18,
+                39.76,
+                39.09,
+                40.58,
+                42.36,
+                40.73,
+                42.33,
+                42.14,
+                43.85
+            ]
+        },
+        {
+            "name": "evolved (Baseline)",
+            "values": [
+                33.63,
+                38.18,
+                39.76,
+                39.09,
+                40.58,
+                42.36,
+                40.73,
+                42.33,
+                42.14,
+                43.85
             ]
         }
     ]
