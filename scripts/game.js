@@ -7,7 +7,7 @@ const game = {
         drawMap();
         updateStatusBar();
         await displayContent(SECTIONS['H']);
-        displayDialog("Welcome to Dr. Pixel's Research Realm! Use arrow keys to move, 'i' for inventory, and space to interact. Find keys to unlock doors and explore!", "Start Adventure", hideDialog);
+        displayDialog("Welcome to Ali's Research Realm! Use arrow keys to move, 'i' for inventory, and space to interact. Find keys to unlock doors and explore!", "Start Adventure", hideDialog);
     },
 
     async checkSection() {
