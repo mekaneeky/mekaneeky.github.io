@@ -3,32 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ali Hussien</title>
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <title>Ali Hussein | Research Realm</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="game-container">
-        <div id="header">
-            <h1>Ali Hussein</h1>
-            <h5>AI research + General Chaos</h5>
-        </div>
-        <div id="main-area">
-            <div id="sidebar">
-                <button id="toggle-sidebar">x</button>
-                <div id="game-map"></div>
+    <div id="app-shell">
+        <header id="header" class="hero-panel">
+            <div class="hero-copy">
+                <p class="eyebrow">Interactive research portfolio</p>
+                <h1>Ali Hussein</h1>
+                <p class="hero-subtitle">AI research + general chaos</p>
+                <p class="hero-intro">
+                    Explore the work like a dungeon crawler, but without the usual friction.
+                    You can roam with the keyboard, tap the movement pad, or jump straight to any room.
+                </p>
             </div>
-            <div id="content"></div>
-        </div>
-        <div id="status-bar">
-            <div id="health"></div>
-            <div id="xp"></div>
-            <div id="level"></div>
-            <div id="keys"></div>
-        </div>
+            <div class="hero-actions">
+                <button type="button" class="hero-link" data-open-section="H">Home</button>
+                <button type="button" class="hero-link" data-open-section="R">Research</button>
+                <button type="button" class="hero-link" data-open-section="P">Publications</button>
+                <button type="button" class="hero-link" data-open-section="E">Experience</button>
+                <button type="button" class="hero-link" data-open-section="L">Lab</button>
+                <button type="button" class="hero-link" data-open-section="C">Contact</button>
+                <a class="hero-link hero-link--external" href="https://github.com/mekaneeky" target="_blank" rel="noreferrer">GitHub</a>
+                <a class="hero-link hero-link--external" href="https://hivetensor.com" target="_blank" rel="noreferrer">Hivetensor</a>
+            </div>
+        </header>
+
+        <main id="main-area">
+            <aside id="sidebar" aria-label="Research map and controls">
+                <div class="sidebar-header">
+                    <div>
+                        <p class="eyebrow">Navigation</p>
+                        <h2>Research Map</h2>
+                    </div>
+                    <button id="toggle-sidebar" class="ghost-button" type="button" aria-expanded="true" aria-controls="sidebar-body">
+                        Hide map
+                    </button>
+                </div>
+
+                <div id="sidebar-body" class="sidebar-body">
+                    <p class="sidebar-hint">
+                        Arrow keys still work. The important upgrade is that room labels are now clickable,
+                        and the site is fully usable without pretending you are speedrunning a maze.
+                    </p>
+
+                    <div class="map-shell">
+                        <div id="game-map" aria-live="polite"></div>
+                    </div>
+
+                    <section class="sidebar-card" aria-label="Movement controls">
+                        <div class="sidebar-card-header">
+                            <h3>Movement Pad</h3>
+                            <button type="button" class="ghost-button" data-action="inventory">Inventory</button>
+                        </div>
+                        <div class="control-pad">
+                            <span class="control-pad-spacer"></span>
+                            <button type="button" data-move="up">UP</button>
+                            <span class="control-pad-spacer"></span>
+                            <button type="button" data-move="left">LEFT</button>
+                            <button type="button" data-action="interact">ACTION</button>
+                            <button type="button" data-move="right">RIGHT</button>
+                            <span class="control-pad-spacer"></span>
+                            <button type="button" data-move="down">DOWN</button>
+                            <button type="button" data-action="hide-dialog">ESC</button>
+                        </div>
+                    </section>
+
+                    <section class="sidebar-card" aria-label="Room directory">
+                        <div class="sidebar-card-header">
+                            <h3>Room Directory</h3>
+                            <button type="button" class="ghost-button" data-open-section="H">Reset view</button>
+                        </div>
+                        <div id="location-directory" class="location-directory"></div>
+                    </section>
+                </div>
+            </aside>
+
+            <section id="content-panel" aria-live="polite">
+                <div class="content-meta">
+                    <div class="meta-chip">
+                        <span class="meta-label">Viewing</span>
+                        <strong id="viewing-room">Booting...</strong>
+                    </div>
+                    <div class="meta-chip">
+                        <span class="meta-label">Explorer Tile</span>
+                        <strong id="current-room">Corridor</strong>
+                    </div>
+                    <div class="meta-chip meta-chip--wide">
+                        <span class="meta-label">Objective</span>
+                        <strong id="objective-text">Open a room or roam the map.</strong>
+                    </div>
+                </div>
+
+                <div id="content" class="content-frame">
+                    <div class="content-loading">Booting the terminal...</div>
+                </div>
+            </section>
+        </main>
+
+        <section id="status-bar" aria-label="Player status">
+            <div class="status-pill">
+                <span>Integrity</span>
+                <strong id="health">100/100</strong>
+            </div>
+            <div class="status-pill">
+                <span>Research XP</span>
+                <strong id="xp">0</strong>
+            </div>
+            <div class="status-pill">
+                <span>Level</span>
+                <strong id="level">1</strong>
+            </div>
+            <div class="status-pill">
+                <span>Keys</span>
+                <strong id="keys">0</strong>
+            </div>
+            <div class="status-pill">
+                <span>Rooms Visited</span>
+                <strong id="visited-count">0</strong>
+            </div>
+        </section>
     </div>
-    <div id="inventory" class="hidden"></div>
-    <div id="dialog" class="hidden"></div>
+
+    <div id="inventory" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="inventory-title"></div>
+    <div id="dialog" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="dialog-title"></div>
+    <div id="toast-region" class="toast-region" aria-live="polite"></div>
+
+    <noscript>
+        <div class="noscript-panel">
+            JavaScript is required for the interactive map. The fastest fallback is the
+            <a href="https://github.com/mekaneeky" target="_blank" rel="noreferrer">GitHub profile</a>
+            and <a href="https://hivetensor.com" target="_blank" rel="noreferrer">Hivetensor</a>.
+        </div>
+    </noscript>
 
     <script src="scripts/config.js"></script>
     <script src="scripts/entities.js"></script>
