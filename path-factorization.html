@@ -36,9 +36,13 @@
     h2 { font-size: 1.08rem; letter-spacing: -0.01em; margin-bottom: 12px; }
     h3 { font-size: 0.95rem; margin: 18px 0 8px; color: var(--blue); }
     .lede { max-width: 850px; color: var(--muted); margin-bottom: 28px; font-size: 0.98rem; }
-    .grid { display: grid; grid-template-columns: minmax(300px, 0.8fr) minmax(480px, 1.28fr) minmax(310px, 0.86fr); gap: 18px; align-items: start; }
+    .grid { display: grid; grid-template-columns: minmax(0, 1.18fr) minmax(350px, 0.82fr); gap: 18px; align-items: start; }
+    .grid > section:first-child { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(340px, 0.82fr) minmax(420px, 1.18fr); gap: 18px; }
+    .grid > section:nth-child(2) { grid-column: 1; }
+    .grid > section:nth-child(3) { grid-column: 2; }
     .panel { background: linear-gradient(145deg, color-mix(in srgb, var(--panel) 98%, white 2%), color-mix(in srgb, var(--panel) 88%, #07101e 12%)); border: 1px solid #30425f; border-radius: 12px; padding: 18px; box-shadow: 0 18px 44px #02061745; }
     .panel + .panel { margin-top: 18px; }
+    .grid > section:first-child > .panel + .panel { margin-top: 0; }
     section > .panel:first-child { border-top: 2px solid var(--accent); }
     .controls { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 16px; }
     button, select, input {
@@ -51,13 +55,14 @@
     input[type="number"] { width: 64px; padding: 6px 7px; text-align: right; }
     input[type="number"]::-webkit-inner-spin-button,
     input[type="number"]::-webkit-outer-spin-button { opacity: 0.55; }
-    .matrix-wrap { display: inline-block; margin-right: 16px; vertical-align: top; }
+    #matrix-inputs, #recovered-matrices { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 14px; }
+    .matrix-wrap { display: block; margin: 0; padding: 10px 12px; background: #0b1627; border: 1px solid #2d4161; border-radius: 9px; }
     .matrix-title { color: var(--muted); margin-bottom: 5px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
     table { border-collapse: separate; border-spacing: 5px; }
     th { color: var(--muted); font-weight: 500; font-size: 0.82rem; padding: 2px 5px; }
     td { padding: 0; }
     .matrix-table input { width: 66px; }
-    .path-block { display: inline-block; margin: 0 12px 12px 0; vertical-align: top; }
+    .path-block { display: inline-block; margin: 0 12px 12px 0; padding: 10px 12px; background: #0b1627; border: 1px solid #2d4161; border-radius: 9px; vertical-align: top; }
     .path-table input { width: 76px; transition: border-color 120ms, box-shadow 120ms; }
     .path-table input.selected { border-color: var(--yellow); box-shadow: 0 0 0 2px #facc1544; }
     .path-table td { position: relative; }
@@ -93,8 +98,12 @@
     .callout { border-left: 3px solid var(--blue); padding: 8px 11px; background: #13213a; color: #c9d7eb; border-radius: 0 8px 8px 0; }
     .site-back { display: inline-flex; align-items: center; gap: 6px; margin-bottom: 18px; color: var(--muted); text-decoration: none; font-size: 0.88rem; }
     .site-back:hover { color: var(--ink); }
-    @media (max-width: 1120px) { .grid { grid-template-columns: 1fr 1fr; } .grid > :first-child { grid-column: 1 / -1; } }
-    @media (max-width: 720px) { main { padding: 14px; } .grid { grid-template-columns: 1fr; } .grid > :first-child { grid-column: auto; } }
+    @media (max-width: 1120px) {
+      .grid { grid-template-columns: 1fr; }
+      .grid > section:first-child { grid-column: auto; grid-template-columns: 1fr; }
+      .grid > section:nth-child(2), .grid > section:nth-child(3) { grid-column: auto; }
+    }
+    @media (max-width: 720px) { main { padding: 14px; } .grid > section:first-child { grid-template-columns: 1fr; } .metric-grid { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -106,9 +115,9 @@
   <div class="grid">
     <section>
       <div class="panel">
-        <h2>1. Start with matrices</h2>
+        <h2>1. Live matrix editor</h2>
         <div class="controls">
-          <button id="from-matrices">Matrix → paths</button>
+          <button id="from-matrices">Reset paths from matrices</button>
           <button id="random-matrices">Random matrices</button>
           <button id="random-paths">Random arbitrary paths</button>
           <button id="break-path">Break one path</button>
@@ -116,6 +125,7 @@
         </div>
         <div id="matrix-inputs"></div>
         <p class="hint">A is hidden-by-input. B is output-by-hidden. The product is B·A.</p>
+        <p id="sync-note" class="hint" aria-live="polite"></p>
         <div class="formula">path(i → h → o) = A[h,i] × B[o,h]</div>
       </div>
 
@@ -124,9 +134,9 @@
         <div class="callout">A path is not allowed to have a private number. It must reuse the same incoming edge and outgoing edge as every other path touching those edges.</div>
         <h3>Try this</h3>
         <ol class="small">
-          <li>Click <b>Matrix → paths</b>.</li>
+          <li>Edit any matrix cell; the path tables update immediately.</li>
           <li>Change one path cell by hand, or click <b>Break one path</b>.</li>
-          <li>Watch the determinant warnings appear.</li>
+          <li>If the path table stays factorable, the matrices update too.</li>
           <li>Click <b>Make factorable</b> to project each hidden node back to shared edges.</li>
         </ol>
         <h3>Factorization ladder</h3>
@@ -148,9 +158,9 @@
         <p class="small">Click a path cell to highlight its two shared edges. Edge labels on the graph are the best shared-edge explanation of the current path values.</p>
       </div>
       <div class="panel">
-        <h2>4. Edit the path values</h2>
+        <h2>4. Live path editor</h2>
         <div id="path-tables"></div>
-        <p class="hint">Each table is one hidden neuron. Rows are inputs; columns are outputs. A factorable table has proportional rows.</p>
+        <p class="hint">Each table is one hidden neuron. Rows are inputs; columns are outputs. A factorable table has proportional rows. An arbitrary table cannot be represented exactly by shared matrix edges.</p>
       </div>
     </section>
 
@@ -162,9 +172,9 @@
         <div id="block-reports"></div>
       </div>
       <div class="panel">
-        <h2>6. Recovered matrices</h2>
+        <h2>6. Recovered shared edges</h2>
         <div id="recovered-matrices"></div>
-        <p class="hint">These are a best shared-edge explanation. Scaling can move from A into B without changing any path, so the recovered matrices need not equal the originals exactly.</p>
+        <p class="hint">These are read-only edge weights. Scaling can move from A into B without changing any path, so an exact recovery need not equal the original matrices entry-for-entry.</p>
         <h3>Collapsed input→output matrix</h3>
         <div id="collapsed-matrix"></div>
       </div>
@@ -204,6 +214,14 @@
     );
   }
 
+  function setMatrixInputs(A, B) {
+    [["matrix-a", A], ["matrix-b", B]].forEach(([id, matrix]) => {
+      $(id).querySelectorAll("tr.data-row").forEach((row, r) => {
+        row.querySelectorAll("input").forEach((input, c) => { input.value = matrix[r][c]; });
+      });
+    });
+  }
+
   function matrixMarkup(id, title, matrix) {
     const columnLabels = title.startsWith("A") ? ["i1", "i2"] : ["h1", "h2"];
     const rowPrefix = title.startsWith("A") ? "h" : "o";
@@ -212,6 +230,15 @@
 
   function renderMatrixInputs() {
     $("matrix-inputs").innerHTML = matrixMarkup("matrix-a", "A (hidden × input)", state.A) + matrixMarkup("matrix-b", "B (output × hidden)", state.B);
+    $("matrix-inputs").querySelectorAll("input").forEach((input) => {
+      input.addEventListener("input", () => {
+        state.A = readMatrix("matrix-a");
+        state.B = readMatrix("matrix-b");
+        state.paths = makePaths(state.A, state.B);
+        renderPathTables();
+        renderAnalysisOnly(false);
+      });
+    });
   }
 
   function rank1Approx(M) {
@@ -255,6 +282,32 @@
       return s + (x - r) * (x - r);
     }, 0));
     return { det, relativeDet, supportClosed, residual, rec };
+  }
+
+  function exactBlockFactors(M) {
+    let pivotRow = 0, pivotCol = 0, pivotSize = 0;
+    for (let i = 0; i < 2; i++) for (let o = 0; o < 2; o++) {
+      if (Math.abs(M[i][o]) > pivotSize) {
+        pivotSize = Math.abs(M[i][o]);
+        pivotRow = i;
+        pivotCol = o;
+      }
+    }
+    if (pivotSize < EPS) return { left: [0, 0], right: [0, 0] };
+    const pivot = M[pivotRow][pivotCol];
+    const left = [M[0][pivotCol], M[1][pivotCol]];
+    const right = [M[pivotRow][0] / pivot, M[pivotRow][1] / pivot];
+    return { left, right, approx: left.map((x) => right.map((y) => x * y)) };
+  }
+
+  function recoveredMatrices(analysis) {
+    const factors = analysis.factorable
+      ? [exactBlockFactors(block(0)), exactBlockFactors(block(1))]
+      : analysis.blocks.map((x) => x.rec);
+    return {
+      A: factors.map((factor) => factor.left.slice()),
+      B: [[factors[0].right[0], factors[1].right[0]], [factors[0].right[1], factors[1].right[1]]],
+    };
   }
 
   function normalized(v) {
@@ -301,7 +354,7 @@
       });
       input.addEventListener("input", () => {
         state.paths[Number(input.dataset.h)][Number(input.dataset.i)][Number(input.dataset.o)] = Number(input.value) || 0;
-        renderAnalysisOnly();
+        renderAnalysisOnly(true);
       });
     });
   }
@@ -317,7 +370,7 @@
       const selected = state.selected.h === h && state.selected.i === i;
       const x1 = inputs[i][0] + 24, y1 = inputs[i][1], x2 = hidden[h][0] - 24, y2 = hidden[h][1];
       const lx = 180, ly = (y1 + y2) / 2 - 4;
-      svg += svgLine(x1, y1, x2, y2, selected ? "selected" : "", `â${h + 1},${i + 1}`, lx, ly);
+      svg += svgLine(x1, y1, x2, y2, selected ? "selected" : "", `a${h + 1},${i + 1}`, lx, ly);
     }
     for (let o = 0; o < 2; o++) for (let h = 0; h < 2; h++) {
       const selected = state.selected.h === h && state.selected.o === o;
@@ -329,7 +382,7 @@
     for (let h = 0; h < 2; h++) svg += `<circle class="node hidden" cx="${hidden[h][0]}" cy="${hidden[h][1]}" r="24"/><text x="${hidden[h][0] - 13}" y="${hidden[h][1] + 5}">h${h + 1}</text>`;
     for (let o = 0; o < 2; o++) svg += `<circle class="node output" cx="${outputs[o][0]}" cy="${outputs[o][1]}" r="24"/><text x="${outputs[o][0] - 13}" y="${outputs[o][1] + 5}">o${o + 1}</text>`;
     svg += `<text class="legend" x="50" y="385">input</text><text class="legend" x="370" y="385">hidden</text><text class="legend" x="690" y="385">output</text>`;
-    svg += `<text class="legend" x="50" y="410">â/b are the best shared-edge fit; yellow edges belong to the selected path</text>`;
+    svg += `<text class="legend" x="50" y="410">a/b are the best shared-edge fit; yellow edges belong to the selected path</text>`;
     $("graph").innerHTML = svg;
   }
 
@@ -337,10 +390,13 @@
     return `<table class="matrix-table"><tr><th></th>${colLabels.map((x) => `<th>${x}</th>`).join("")}</tr>${M.map((row, r) => `<tr><th>${rowLabels[r]}</th>${row.map((x) => `<td><input readonly value="${fmt(x)}"></td>`).join("")}</tr>`).join("")}</table>`;
   }
 
-  function renderAnalysisOnly() {
+  function renderAnalysisOnly(syncMatrices = true) {
     const analysis = allAnalysis();
     const detBad = analysis.blocks.some((x) => x.relativeDet >= 1e-6 || !x.supportClosed);
     $("overall-status").innerHTML = `<div class="status ${analysis.factorable ? "good" : "bad"}"><strong>${analysis.factorable ? "✓ Factorable into shared edges" : "✗ Not exactly factorable into shared edges"}</strong>${analysis.factorable ? "Every hidden-node path table can be explained by one incoming edge vector and one outgoing edge vector." : "At least one hidden-node table contains a path value that cannot be produced by reusing edge weights."}</div>`;
+    $("sync-note").textContent = analysis.factorable
+      ? (syncMatrices ? "Linked: these path values have been written back into A and B (up to harmless per-hidden-node scaling)." : "Linked: edit either matrix or path table; the other view updates whenever the shared-edge constraints still hold.")
+      : "Unlinked: this arbitrary path table cannot be represented exactly by one A and B. The matrix editor remains at the last exact factorization; use Make factorable or edit the matrices to relink.";
     $("metrics").innerHTML = [
       ["total path values", "8"],
       ["effective shared-edge values", "6"],
@@ -349,9 +405,13 @@
     ].map(([label, value]) => `<div class="metric"><div class="label">${label}</div><div class="value ${detBad ? "warn-text" : "good-text"}">${value}</div></div>`).join("");
     $("block-reports").innerHTML = analysis.blocks.map((x, h) => `<div class="formula" style="margin-top:10px"><b>h${h + 1}</b><br>cross-check: p11·p22 − p12·p21 = ${fmt(x.det)}<br>relative error: ${fmt(x.relativeDet)}<br>support is rectangular: <span class="${x.supportClosed ? "good-text" : "bad-text"}">${x.supportClosed ? "yes" : "no"}</span><br>best rank-1 residual: ${fmt(x.residual)}</div>`).join("");
 
-    const arec = analysis.blocks.map((x) => x.rec.left);
-    const brec = [[analysis.blocks[0].rec.right[0], analysis.blocks[1].rec.right[0]], [analysis.blocks[0].rec.right[1], analysis.blocks[1].rec.right[1]]];
-    $("recovered-matrices").innerHTML = matrixMarkup("recovered-a", "Recovered Â (best fit)", arec) + matrixDisplay(brec, ["o1", "o2"], ["h1", "h2"]);
+    const recovered = recoveredMatrices(analysis);
+    if (analysis.factorable && syncMatrices) {
+      state.A = clone(recovered.A);
+      state.B = clone(recovered.B);
+      setMatrixInputs(state.A, state.B);
+    }
+    $("recovered-matrices").innerHTML = matrixDisplay(recovered.A, ["h1", "h2"], ["i1", "i2"]) + matrixDisplay(recovered.B, ["o1", "o2"], ["h1", "h2"]);
     const C = [[0, 0], [0, 0]];
     for (let o = 0; o < 2; o++) for (let i = 0; i < 2; i++) for (let h = 0; h < 2; h++) C[o][i] += state.paths[h][i][o];
     $("collapsed-matrix").innerHTML = matrixDisplay(C, ["o1", "o2"], ["i1", "i2"]);
@@ -369,7 +429,7 @@
   function render() {
     renderMatrixInputs();
     renderPathTables();
-    renderAnalysisOnly();
+    renderAnalysisOnly(false);
   }
 
   $("from-matrices").addEventListener("click", () => {
