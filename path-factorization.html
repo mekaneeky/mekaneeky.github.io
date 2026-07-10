@@ -92,6 +92,23 @@
     #graph .edge.selected { stroke: var(--yellow); stroke-width: 5; opacity: 1; }
     #graph .edge-label { fill: #c5d4e9; font-size: 12px; }
     #graph .legend { fill: var(--muted); font-size: 12px; }
+    .path-overview { margin-top: 14px; padding: 13px; background: #0a1424; border: 1px solid #2d4161; border-radius: 10px; }
+    .path-overview-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 10px; }
+    .path-overview-head h3 { margin: 0; color: var(--ink); }
+    .path-overview-head p { margin: 0; }
+    .path-overview-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+    button.path-card { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 9px 10px; text-align: left; background: #111f35; border-color: #2e4568; }
+    button.path-card:hover, button.path-card.active { background: #1c304f; border-color: var(--yellow); }
+    .path-route { display: flex; align-items: center; gap: 5px; white-space: nowrap; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .path-node { display: inline-flex; min-width: 28px; justify-content: center; padding: 2px 5px; border: 1px solid #58729a; border-radius: 5px; font-size: 0.78rem; }
+    .path-node.input { color: var(--blue); border-color: #3779ab; }
+    .path-node.hidden { color: var(--purple); border-color: #7462b2; }
+    .path-node.output { color: var(--green); border-color: #388d76; }
+    .path-arrow { color: var(--muted); }
+    .path-detail { min-width: 0; text-align: right; }
+    .path-value, .path-formula { display: block; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .path-value { color: var(--ink); font-weight: 650; }
+    .path-formula { color: var(--muted); font-size: 0.72rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .ladder { width: 100%; }
     .ladder td, .ladder th { padding: 8px; border-bottom: 1px solid #2c3b57; text-align: left; }
     .ladder th { background: #1a2943; color: #d9e6fa; }
@@ -103,7 +120,7 @@
       .grid > section:first-child { grid-column: auto; grid-template-columns: 1fr; }
       .grid > section:nth-child(2), .grid > section:nth-child(3) { grid-column: auto; }
     }
-    @media (max-width: 720px) { main { padding: 14px; } .grid > section:first-child { grid-template-columns: 1fr; } .metric-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 720px) { main { padding: 14px; } .grid > section:first-child { grid-template-columns: 1fr; } .metric-grid, .path-overview-grid { grid-template-columns: 1fr; } .path-overview-head { display: block; } }
   </style>
 </head>
 <body>
@@ -155,7 +172,8 @@
       <div class="panel">
         <h2>3. Layered graph</h2>
         <svg id="graph" viewBox="0 0 820 430" role="img" aria-label="Input, hidden, and output graph"></svg>
-        <p class="small">Click a path cell to highlight its two shared edges. Edge labels on the graph are the best shared-edge explanation of the current path values.</p>
+        <p class="small">The graph shows the shared edges. The path map below enumerates every end-to-end route; click any route or path cell to highlight it.</p>
+        <div id="all-paths" class="path-overview"></div>
       </div>
       <div class="panel">
         <h2>4. Live path editor</h2>
@@ -350,7 +368,9 @@
         state.selected = { h: Number(input.dataset.h), i: Number(input.dataset.i), o: Number(input.dataset.o) };
         $("path-tables").querySelectorAll("input").forEach((x) => x.classList.remove("selected"));
         input.classList.add("selected");
-        renderGraph(allAnalysis());
+        const analysis = allAnalysis();
+        renderGraph(analysis);
+        renderAllPaths(analysis);
       });
       input.addEventListener("input", () => {
         state.paths[Number(input.dataset.h)][Number(input.dataset.i)][Number(input.dataset.o)] = Number(input.value) || 0;
@@ -386,6 +406,26 @@
     $("graph").innerHTML = svg;
   }
 
+  function renderAllPaths(analysis) {
+    const fitLabel = analysis.factorable ? "edge product" : "best edge fit";
+    let html = `<div class="path-overview-head"><h3>All 8 end-to-end paths</h3><p class="small">Click a route to highlight its two edges</p></div><div class="path-overview-grid">`;
+    for (let h = 0; h < 2; h++) {
+      const factor = analysis.factorable ? exactBlockFactors(block(h)) : analysis.blocks[h].rec;
+      for (let i = 0; i < 2; i++) for (let o = 0; o < 2; o++) {
+        const active = state.selected.h === h && state.selected.i === i && state.selected.o === o ? "active" : "";
+        html += `<button type="button" class="path-card ${active}" data-h="${h}" data-i="${i}" data-o="${o}"><span class="path-route"><span class="path-node input">i${i + 1}</span><span class="path-arrow">→</span><span class="path-node hidden">h${h + 1}</span><span class="path-arrow">→</span><span class="path-node output">o${o + 1}</span></span><span class="path-detail"><span class="path-value">p = ${fmt(state.paths[h][i][o])}</span><span class="path-formula">${fitLabel}: ${fmt(factor.left[i])} × ${fmt(factor.right[o])}</span></span></button>`;
+      }
+    }
+    $("all-paths").innerHTML = html + "</div>";
+    $("all-paths").querySelectorAll(".path-card").forEach((card) => {
+      card.addEventListener("click", () => {
+        state.selected = { h: Number(card.dataset.h), i: Number(card.dataset.i), o: Number(card.dataset.o) };
+        renderPathTables();
+        renderAnalysisOnly(false);
+      });
+    });
+  }
+
   function matrixDisplay(M, rowLabels = ["o1", "o2"], colLabels = ["i1", "i2"]) {
     return `<table class="matrix-table"><tr><th></th>${colLabels.map((x) => `<th>${x}</th>`).join("")}</tr>${M.map((row, r) => `<tr><th>${rowLabels[r]}</th>${row.map((x) => `<td><input readonly value="${fmt(x)}"></td>`).join("")}</tr>`).join("")}</table>`;
   }
@@ -416,6 +456,7 @@
     for (let o = 0; o < 2; o++) for (let i = 0; i < 2; i++) for (let h = 0; h < 2; h++) C[o][i] += state.paths[h][i][o];
     $("collapsed-matrix").innerHTML = matrixDisplay(C, ["o1", "o2"], ["i1", "i2"]);
     renderGraph(analysis);
+    renderAllPaths(analysis);
     $("path-tables").querySelectorAll("td").forEach((td) => {
       const input = td.querySelector("input");
       if (!input) return;
